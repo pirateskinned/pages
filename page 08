@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<head>
+
+<!--
+
+    page theme 8  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    if you need any help, feel free to
+    message me at pirateskinned.tumblr.com
+    
+    ------
+    
+    tumblr controls styling by cyantists.tumblr.com
+    icon font by suiomi.com/font
+    
+    ------
+    
+    INSTRUCTIONS:
+    
+    there are two places to edit.
+    basic settings (colours, images, etc)
+    are under 'theme options'
+    the rest can be edited in the html
+    
+    ctrl + f / cmd + f and look for:
+    
+    'theme options'
+    'edit html here'
+    
+
+-->
+
+<title>about page</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="description" content="{MetaDescription}" />
+
+<!-- scripts -->
+
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+<!-- icon font -- suiomi.com/font -->
+
+<link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet">
+
+<!-- tooltips -->
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+
+<style type="text/css">
+
+/* ---
+
+    THEME OPTIONS
+    
+--- */
+
+:root {
+    --background:#e4e8f2;
+    --container:#fafafa;
+    --text:#4f4e4e;
+    --border:#ebebeb;
+    --links:#c1c7c7;
+    --accent-one:#c69380;
+    --accent-two:#847a57;
+    
+    --font-size:12px;
+    
+    --background-image:url('https://64.media.tumblr.com/6cd48e7f7e3728f5c686984bff6b29e9/539c0b05217c2d54-e4/s2048x3072/7de3717c689e36d60f4a74ab2030cd042619939a.png');
+    
+    --background-repeat:repeat;
+    /* options: repeat or no-repeat */
+    
+    --big-image:url('https://images.unsplash.com/photo-1585960245932-71d47d44159d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80');
+}
+
+/* ---  tumblr controls styling by cyantists
+        http://cyantists.tumblr.com/tumblr_controls/hover --- */
+
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:-2px!important;
+    right:0!important;
+    opacity:0;
+    padding-right:38px;
+    /* delete invert(1) from here */
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    /* to here if your blog has a dark background */
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.6!important;}
+
+.hcontrols {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999999999;}
+
+.hcontrols svg {
+    width:14px;
+    height:14px;
+    padding:9px;}
+
+.hcontrols svg path {
+    fill:#888888;/* change this to change the color of the icon */}
+
+/* --- tooltips & scrollbars --- */
+
+#s-m-t-tooltip {
+    position:absolute;
+    margin-top: 15px;
+    z-index:9999;
+    padding:3px 5px;
+    background:var(--container);
+    color:var(--text);
+    border:1px solid var(--border);
+    font-size:var(--font-size);
+    border-radius:5px;
+}
+
+::-webkit-scrollbar-thumb {background-color:var(--accent-two);}
+::-webkit-scrollbar {background-color:transparent;width:1px;height:1px;}
+
+/* --- basics --- */
+
+/* --- background image --- */
+
+body {
+    background-color:var(--background);
+    background-image:var(--background-image);
+    background-attachment:fixed;
+    background-position:center center;
+    background-repeat:var(--background-repeat);
+    background-size:auto;
+    color:var(--text);
+    font-family: 'Work Sans', sans-serif;
+    font-size:var(--font-size);
+    line-height:calc(var(--font-size) + 4px);
+    font-weight:300;
+    text-align:justify;
+    margin:0;
+}
+
+a {
+    color:var(--text);
+    text-decoration:none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:var(--text);
+        text-decoration:none;
+    }
+    
+p a, .textblock a {box-shadow:var(--links) 0px -5px 0px inset;}
+p a:hover, .textblock a:hover {box-shadow:var(--links) 0px -11px 0px inset;}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+b, strong, bold {
+    color:var(--accent-one);
+    font-weight:700;
+}
+
+i, em, italic {
+    color:var(--accent-two);
+}
+
+u {
+    text-decoration:none;
+}
+
+    .firstletter, u {
+        display:block;
+        float:left;
+        padding:12px 14px;
+        background:var(--accent-one);
+        color:var(--container);
+        font-weight:700;
+        text-transform:uppercase;
+        font-size:calc(var(--font-size) + 2px);
+        margin:0px 10px 0px 0px;
+        border-radius:5px;
+    }
+
+s, strike {
+    text-decoration-color:var(--accent-two);
+}
+
+small, sub, sup, big {
+    font-size:var(--font-size);
+    line-height:14px;
+    vertical-align:baseline;
+}
+
+blockquote {
+    padding:0px 5px 0px 15px;
+    border-left:1px solid var(--border);
+    margin-left:5px;
+    margin-right:0px;
+}
+    
+    blockquote blockquote {
+        margin-right:0px;
+    }
+
+pre {
+    font-family: 'Work Sans', sans-serif;
+    font-size:var(--font-size);
+    text-transform:uppercase;
+    font-weight:700;
+    padding:10px;
+    background-color:var(--accent-two);
+    color:var(--container);
+}
+
+    pre i, pre em, pre b, pre strong, pre a {
+        color:var(--background);
+    }
+
+ul {
+    padding-left:15px;
+}
+
+    ul li {
+        list-style-type:none;
+    }
+    
+        ul li:before {
+          content: "— ";
+          text-indent: -5px;
+        }
+
+/* --- header styles --- */
+
+h1 {
+    margin:0px 0px 20px 0px;
+    font-weight:600;
+    color:var(--accent-one);
+    text-align:left;
+    letter-spacing:1px;
+    font-family:'Poppins', sans-serif;
+    text-transform:lowercase;
+    font-size:calc(var(--font-size) + 12px);
+}
+
+h2 {
+    font-weight:700;
+    color:var(--accent-two);
+    text-align:left;
+    font-size:calc(var(--font-size) + 4px);
+}
+
+    h2 b, b h2, h2 i, i h2,
+    h2 strong, strong h2, h2 em, em h2 {
+        color:var(--accent-two);
+    }
+    
+h3 {
+    margin:0px 0px 5px 0px;
+    font-weight:bold;
+    color:var(--accent-one);
+    text-align:left;
+    font-size:calc(var(--font-size) + 6px);
+}
+
+h4 {
+    font-size:var(--font-size);
+    letter-spacing:2px;
+    font-weight:normal;
+    text-transform:uppercase;
+    text-align:left;
+    margin:0px;
+}
+
+/* --- container --- */
+
+.container {
+    position:absolute;
+    margin-top:-300px;
+    margin-left:-500px;
+    top:50%;
+    left:50%;
+    width:1000px;
+    height:600px;
+}
+
+/* --- navigation --- */
+
+.nav {
+    position:absolute;
+    top:20px;
+    left:0px;
+    width:60px;
+    height:540px;
+    border-radius:5px 0px 0px 5px;
+    background-color:var(--text);
+    border:1px solid var(--border);
+    border-right:none;
+    padding:20px 0px 0px 0px;
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:flex-start;
+}
+
+    .nav a {
+        display:block;
+        z-index:10;
+        width:20px;
+        height:auto;
+        margin:0px 20px 0px 20px;
+        padding:0px 0px 10px 0px;
+        color:var(--accent-one);
+        font-size:16px;
+        border-radius:20px;
+        background-color:var(--text);
+    }
+    
+        .nav a:nth-of-type(even) {
+            color:var(--accent-two);
+        }
+    
+    .nav a:hover {
+        transform:scale(1.1,1.1);
+    }
+    
+    .nav-line {
+        position:absolute;
+        z-index:1;
+        top:20px;
+        left:29.5px;
+        height:520px;
+        width:1px;
+        background-color:var(--border);
+        opacity:60%;
+    }
+
+/* --- image + chat --- */
+
+.image {
+    position:absolute;
+    top:0px;
+    left:61px;
+    width:400px;
+    height:598px;
+    background-image:var(--big-image);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius:5px;
+    border:1px solid var(--border);
+}
+
+.chat {
+    position:absolute;
+    z-index:500;
+    bottom:40px;
+    left:40px;
+    width:440px;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:flex-end;
+}
+
+    .chat-left {
+        width:440px;
+        height:auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-content:flex-start;
+    }
+    
+    .chat-right {
+        width:440px;
+        height:auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        align-content:flex-start;
+    }
+    
+        .chat-left-img {
+            width:72px;
+            height:auto;
+            margin-right:10px;
+        }
+        
+        .chat-right-img {
+            width:72px;
+            height:auto;
+            margin-left:10px;
+        }
+        
+            .chat-left-img img,
+            .chat-right-img img {
+                width:70px;
+                height:70px;
+                border-radius:40px;
+                border:1px solid var(--border);
+            }
+        
+        .chat-left-text,
+        .chat-right-text {
+            width:160px;
+            height:auto;
+        }
+        
+        .chat-left-text,
+        .chat-left-text span {
+            text-align:left;
+            float:left;
+            clear:both;
+        }
+        
+        .chat-right-text,
+        .chat-right-text span {
+            text-align:right;
+            float:right;
+            clear:both;
+        }
+        
+            .chat-left-text b,
+            .chat-right-text b {
+                display:block;
+                color:var(--container);
+                width:100%;
+                margin-bottom:5px;
+            }
+            
+            .chat-left-text span,
+            .chat-right-text span {
+                display:block;
+                width:auto;
+                color:var(--container);
+                padding:4px 6px;
+                margin:1px 0px;
+                background:rgba(155, 155, 155, 0.35);
+                box-shadow:0 8px 32px 0 rgba(0, 0, 0, 0.37 );
+                backdrop-filter: blur(6.0px);
+                -webkit-backdrop-filter: blur(6.0px);
+                border-radius: 12px;
+                border:1px solid rgba(255, 255, 255, 0.18 );
+            }
+
+/* --- text area --- */
+
+.textblock {
+    position:absolute;
+    top:20px;
+    right:0px;
+    width:456px;
+    height:480px;
+    border-radius:0px 5px 5px 0px;
+    background-color:var(--container);
+    border:1px solid var(--border);
+    border-left:none;
+    padding:40px;
+    overflow:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-content:flex-start;
+}
+
+    .text {
+        width:100%;
+        height:auto;
+        margin-top:20px;
+        padding-top:20px;
+        border-top:1px solid var(--border);
+    }
+    
+    .stats-left {
+        padding-right:20px;
+        border-right:1px solid var(--border);
+    }
+    
+    .stat {
+        width:207.5px;
+        height:auto;
+        margin-bottom:5px;
+        display:flex;
+        justify-content:space-between;
+        align-content:baseline;
+    }
+    
+        .stat b {
+            max-width:97.5px;
+            height:auto;
+            color:var(--accent-two);
+            font-family:'Poppins', sans-serif;
+            font-weight:600;
+            padding:2px 4px;
+            margin-right:10px;
+            text-align:left;
+            font-size:calc(var(--font-size) + 2px);
+        }
+        
+        .stat span {
+            max-width:100px;
+            text-align:right;
+        }
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+    width:30px;
+    height:30px;
+    line-height:34px;
+    color:var(--accent-one);
+    background-color:var(--container);
+    border-radius:40px;
+    border:1px solid var(--border);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="hcontrols"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216 216" enable-background="new 0 0 216 216" xml:space="preserve"><path d="M106.6,134c14.3,0,26-11.7,26-26s-11.7-26-26-26s-26,11.7-26,26S92.2,134,106.6,134z M106.6,94c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S98.9,94,106.6,94z M40.4,124.6l7.2,3.3c3,1.4,4.4,4.8,3.3,7.9l-2.8,7.4c-2.1,5.7-1.4,11.8,2.1,16.7c3.4,5,9,7.9,15,7.9c2.2,0,4.4-0.4,6.5-1.2l7.4-2.8c0.7-0.3,1.4-0.4,2.2-0.4c2.4,0,4.7,1.4,5.7,3.7l3.3,7.2c3,6.6,9.4,10.7,16.6,10.7s13.6-4.1,16.6-10.7l3.3-7.2c1-2.2,3.2-3.7,5.7-3.7c0.7,0,1.5,0.1,2.2,0.4l7.4,2.8c2.1,0.8,4.3,1.2,6.5,1.2c0,0,0,0,0,0c5.9,0,11.5-3,15-7.9c3.4-5,4.2-11.1,2.1-16.7l-2.8-7.4c-1.1-3.1,0.3-6.5,3.3-7.9l7.2-3.3c6.6-3,10.7-9.4,10.7-16.6s-4.1-13.6-10.7-16.6l-7.2-3.3c-3-1.4-4.4-4.8-3.3-7.9l2.8-7.4c2.1-5.7,1.4-11.8-2.1-16.7c-3.4-5-9-7.9-15-7.9c-2.2,0-4.4,0.4-6.5,1.2l-7.4,2.8c-0.7,0.3-1.4,0.4-2.2,0.4c-2.4,0-4.7-1.4-5.7-3.7l-3.3-7.2c-3-6.6-9.4-10.7-16.6-10.7S93,35.2,90,41.8l-3.3,7.2c-1,2.2-3.2,3.7-5.7,3.7c-0.7,0-1.5-0.1-2.2-0.4l-7.4-2.8c-2.1-0.8-4.3-1.2-6.5-1.2c-5.9,0-11.5,3-15,7.9c-3.4,5-4.2,11.1-2.1,16.7l2.8,7.4c1.1,3.1-0.3,6.5-3.3,7.9l-7.2,3.3c-6.6,3-10.7,9.4-10.7,16.6S33.8,121.6,40.4,124.6z M45.3,102.3l7.2-3.3c8.7-4,12.9-14.1,9.5-23l-2.8-7.4c-1-2.7,0-4.7,0.7-5.7c1.6-2.4,4.6-3.4,7.4-2.3l7.4,2.8c2.1,0.8,4.2,1.2,6.4,1.2c0,0,0,0,0,0c7.1,0,13.6-4.2,16.6-10.7l3.3-7.2c1.5-3.4,4.7-3.7,5.7-3.7s4.1,0.3,5.7,3.7l3.3,7.2c3,6.5,9.5,10.7,16.6,10.7c2.2,0,4.3-0.4,6.4-1.2l7.4-2.8c2.8-1,5.7,0,7.4,2.3c0.7,1,1.7,3,0.7,5.7l-2.8,7.4c-3.3,8.9,0.8,19,9.5,23l7.2,3.3c3.4,1.5,3.7,4.7,3.7,5.7s-0.3,4.1-3.7,5.7l-7.2,3.3c-8.7,4-12.9,14.1-9.5,23l2.8,7.4c1,2.7,0,4.7-0.7,5.7c-1.6,2.4-4.6,3.4-7.4,2.3l-7.4-2.8c-2.1-0.8-4.2-1.2-6.4-1.2c-7.1,0-13.6,4.2-16.6,10.7l-3.3,7.2c-1.5,3.4-4.7,3.7-5.7,3.7s-4.1-0.3-5.7-3.7l-3.3-7.2c-3-6.5-9.5-10.7-16.6-10.7c-2.2,0-4.3,0.4-6.4,1.2l-7.4,2.8c-2.8,1-5.7,0-7.4-2.3c-0.7-1-1.7-3-0.7-5.7l2.8-7.4c3.3-8.9-0.8-19-9.5-23l-7.2-3.3c-3.4-1.5-3.7-4.7-3.7-5.7S41.9,103.9,45.3,102.3z"/></svg></div>
+
+
+<div class="container">
+
+    <!-- EDIT HTML HERE -->
+
+    <div class="nav">
+        <!-- add as many links as you'd like -->
+        
+        <a href="/" title="link one" class="sf sf-circle"></a>
+        <a href="/" title="link two" class="sf sf-circle"></a>
+        <a href="/" title="link three" class="sf sf-circle"></a>
+        <a href="/" title="link four" class="sf sf-circle"></a>
+        
+        <!-- paste new links above this line -->
+        
+        <div class="nav-line"></div>
+    </div>
+    
+    <div class="image"></div>
+    
+    <div class="chat">
+    
+        <!-- TEXT MESSAGES 
+            you can have multiple back and forth
+            or only have on the left side
+            or only on the right side
+        -->
+        
+        <!-- left side texts -->
+    
+        <div class="chat-left">
+            <div class="chat-left-img">
+                <!-- icon link here -->
+                <img src="https://i.imgur.com/IC3V5XB.png">
+            </div>
+            <div class="chat-left-text">
+                <!-- bold = texter name 
+                    span = text message, new span for new text -->
+                <b>crush 😍💘✨</b>
+                <span>hi</span>
+                
+            </div>
+        </div>
+        
+        <!-- right side texts -->
+        
+        <div class="chat-right">
+            <div class="chat-right-text">
+                <!-- bold = texter name 
+                    span = text message, new span for new text -->
+                <b>name</b>
+                <span>hello</span>
+                <span>i seem to have lost my phone number</span>
+                <span>can i have yours?</span>
+                
+            </div>
+            <div class="chat-right-img">
+                <!-- icon link here -->
+                <img src="https://i.imgur.com/NVAl11x.png">
+            </div>
+        </div>
+        
+        <!-- left side texts -->
+        
+        <div class="chat-left">
+            <div class="chat-left-img">
+                <!-- icon link here -->
+                <img src="https://i.imgur.com/IC3V5XB.png">
+            </div>
+            <div class="chat-left-text">
+                <!-- bold = texter name 
+                    span = text message, new span for new text -->
+                <b>crush 😍💘✨</b>
+                <span>...</span>
+                <span>we're already texting?</span>
+                
+            </div>
+        </div>
+        
+        <!-- paste new text blocks between here -->
+        
+        
+        <!-- and here -->
+        
+    </div>
+    
+    <div class="textblock">
+    
+        <!-- STATISTICS -->
+        
+        <!-- left side -->
+        
+        <div class="stats stats-left">
+        
+            <!-- copy & paste an entire stat block
+                to add another stat
+                
+            <div class="stat">
+                <b>question</b>
+                <span>answer</span>
+            </div>
+            
+                -->
+        
+            <div class="stat">
+                <b>name</b>
+                <span>full name here</span>
+            </div>
+            
+            <div class="stat">
+                <b>pronouns</b>
+                <span>they/them</span>
+            </div>
+            
+            <div class="stat">
+                <b>age</b>
+                <span>##</span>
+            </div>
+            
+            <div class="stat">
+                <b>occupation</b>
+                <span>cool stuff</span>
+            </div>
+            
+        </div>
+        
+        <!-- right side -->
+        
+        <div class="stats stats-right">
+        
+            <!-- copy & paste an entire stat block
+                to add another stat
+                
+            <div class="stat">
+                <b>question</b>
+                <span>answer</span>
+            </div>
+            
+                -->
+        
+            <div class="stat">
+                <b>question</b>
+                <span>answer</span>
+            </div>
+            
+            <div class="stat">
+                <b>lorem</b>
+                <span>ipsum</span>
+            </div>
+            
+            <div class="stat">
+                <b>Sed vel turpis fauci bus</b>
+                <span>Sed ornare elit eu ultrices auctor</span>
+            </div>
+            
+        </div>
+        
+        <div class="text">
+        
+            <!-- TEXT BLOCK
+            any basic html works in here -->
+            
+            <u>P</u>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ante nibh, volutpat eu lorem sed, consequat accumsan est. Aenean nec imperdiet ligula. Aenean gravida justo quis ultrices gravida. Sed ornare elit eu ultrices auctor. Integer elementum tincidunt neque feugiat aliquam. <b>Pellentesque fermentum urna ipsum,</b> ac vulputate nunc porttitor in. Vivamus hendrerit dapibus ex id venenatis. Vivamus eget elementum orci. Sed vel turpis faucibus, hendrerit tellus ac, ultricies diam. Proin vel pulvinar leo. Phasellus lectus tellus, eleifend et nunc ut, ultricies lobortis leo. Integer elit elit, commodo at gravida quis, dignissim tristique lorem.
+            
+            <br><br>
+            
+            <img src="https://i.imgur.com/C3Izm3d.png" style="width:70px; height:70px; border-radius:5px; border:1px solid var(--border); float:right; margin-left:10px;">
+            
+            Sed a turpis vel dui pretium dictum. <i>Praesent feugiat eleifend dui, sed commodo ante pellentesque sit amet.</i> Pellentesque in faucibus nibh. Suspendisse dapibus ac purus at dignissim. Duis et fringilla enim. Pellentesque ut imperdiet felis. Phasellus ac malesuada dui. Nullam faucibus mi at arcu fermentum fermentum. Fusce at diam dui. Phasellus gravida euismod lectus, in elementum arcu luctus ac. Maecenas tincidunt gravida ipsum, ut convallis nunc pulvinar ut. Morbi dictum a lacus quis tristique. Vivamus ex ligula, pulvinar et metus et, imperdiet sollicitudin nunc.
+            <blockquote>
+            Proin in ornare nunc. Morbi vitae lectus semper, congue ex at, rhoncus augue. Curabitur varius non diam ac fringilla. Curabitur eu hendrerit velit, eu faucibus turpis. Nullam ultrices sem vitae massa accumsan, eu egestas nunc lacinia. Aliquam erat volutpat. Morbi tincidunt quis mauris et iaculis.
+            </blockquote>
+            
+            Maecenas vestibulum diam nec magna mattis, nec viverra urna ornare. Quisque sit amet orci nec dolor sodales auctor ac laoreet dui. Aenean rutrum ut justo lacinia pulvinar. Donec in consequat quam. Aliquam eget accumsan magna. Aenean ultrices et metus id vulputate. Cras rhoncus faucibus ligula non aliquam. Quisque bibendum lacus mattis nibh viverra scelerisque. Mauris sit amet ipsum varius, feugiat nisi eget, egestas dolor. Vestibulum vitae massa sed sapien porttitor imperdiet. Donec rhoncus bibendum ultrices. Pellentesque purus lectus, maximus quis lacinia sit amet, ornare efficitur lectus.
+        </div>
+    </div>
+
+</div> <!-- end of container -->
+
+<div class="credit"><a class="sf sf-code" href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"></a></div>
+
+</body></html>
