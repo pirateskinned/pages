@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<head>
+
+<!--
+
+    page theme two: coastline  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    if you need any help, feel free to
+    message me at pirateskinned.tumblr.com
+    
+    ------
+    
+    tumblr controls styling by odeysseus.tumblr.com
+    icon font by suiomi.com/font
+
+-->
+
+<title>coastline - about page</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="description" content="{MetaDescription}" />
+
+<!-- scripts -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,700,900" rel="stylesheet">
+
+<!-- icon font -- http://suiomi.com/font -->
+
+<link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet">
+
+<!-- tooltips -->
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+
+<style type="text/css">
+
+/* ---  tumblr controls styling by odeysseus
+        http://odeysseus.tumblr.com/post/163708246967/ --- */
+
+.tmblr-iframe {
+    white-space:nowrap;
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+    filter: invert(100%);
+    opacity:.2;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    position:fixed!important;
+    right:-10px!important;
+    transform:scale(0.7,0.7);
+}
+
+.tmblr-iframe:hover {
+    opacity:1;
+}
+
+/* --- tooltips & scrollbars --- */
+
+#s-m-t-tooltip {
+    position:absolute;
+    margin-top: 15px;
+    z-index:9999;
+    padding:3px 5px;
+    background:#ffffff;
+    color:#1d1d1d;
+    border-radius:3px;
+    font-size:10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+}
+
+::-webkit-scrollbar-thumb:vertical {background-color:#e3c7be;}
+::-webkit-scrollbar-button:horizontal {background-color:#e3c7be;}
+::-webkit-scrollbar {background-color:transparent; width:3px;}
+
+/* --- basics --- */
+
+body {
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+    background-color:#8da7bc;
+    color:#1d1d1d;
+    font-family: 'Poppins', sans-serif;
+    font-size:10px;
+    line-height:15px;
+    font-weight:300;
+    text-align:justify;
+    margin:0;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    background-image: url('https://images.unsplash.com/photo-1545815817-6530f410acc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80');
+    background-size: cover;
+    z-index: -1;
+    height: 20%; width: 20%; /* Using Glen Maddern's trick /via @mente */
+
+    /* don't forget to use the prefixes you need */
+    transform: scale(5);
+    transform-origin: top left;
+    filter: blur(1px);
+}
+
+a {
+    color:#1d1d1d;
+    text-decoration:none;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:#1d1d1d;
+        text-decoration:none;
+    }
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+b, strong, bold {
+    color:#e4ab4c;
+    font-weight:500;
+}
+
+i, em, italic {
+    color:#e4ab4c;
+}
+
+u {
+    text-decoration:none;
+    border-bottom:1px solid #e4ab4c;
+}
+
+s, strike {
+    text-decoration-color:#e4ab4c;
+}
+
+/* --- container --- */
+
+.container {
+    position:absolute;
+    margin-top:-275px;
+    margin-left:-450px;
+    top:50%;
+    left:50%;
+    width:900px;
+    height:550px;
+    overflow:hidden;
+    background-color:#f6f6f6;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius:5px;
+}
+
+/* --- navigation --- */
+
+.nav {
+    position:absolute;
+    left:-235px;
+    top:235px;
+    width:550px;
+    height:80px;
+    text-align:center;
+    box-sizing:border-box;
+    padding:0px;
+    background-color:#e4ab4c; /* --- change your accent colour here --- */
+    transform:rotate(-90deg);
+}
+
+    .nav a {
+        display:inline-block;
+        width:auto;
+        height:40px;
+        line-height:40px;
+        text-align:center;
+        font-size:14px;
+        margin:20px 10px;
+        color:#fff;
+        letter-spacing:1px;
+        font-weight:500;
+        border-bottom:1px solid transparent;
+    }
+    
+        .nav a:hover {
+            font-style:italic;
+        }
+
+/* --- I M A G E S --- */
+
+/* --- big image --- */
+
+.img {
+    position:absolute;
+    top:40px;
+    left:130px;
+    width:270px;
+    height:300px;
+    border-top:10px solid #fff;
+    border-right:10px solid #fff;
+    border-bottom:50px solid #fff;
+    border-left:10px solid #fff;
+    background-image:url('https://images.unsplash.com/photo-1543689347-c0c3ca7296a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2736&q=80');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow: 80px 50px 0px 0px #80bce1; /* --- change hex to change the coloured block on the right of the image --- */
+    outline:1px solid #e8e8e8;
+}
+
+/* --- small image --- */
+
+.smallimg {
+    position:absolute;
+    top:140px;
+    left:720px;
+    width:130px;
+    height:100px;
+    border-top:10px solid #fff;
+    border-right:10px solid #fff;
+    border-bottom:50px solid #fff;
+    border-left:10px solid #fff;
+    background-image:url('https://images.unsplash.com/photo-1543689347-6deb11b87640?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform:rotate(-7deg);
+    outline:1px solid #e8e8e8;
+}
+
+/* --- big letter --- */
+
+.letter {
+    position:absolute;
+    top:380px;
+    left:370px;
+    font-size:120px;
+    font-weight:700;
+    transform:rotate(7deg);
+}
+
+/* --- big title --- */
+
+.title {
+    position:absolute;
+    top:50px;
+    left:480px;
+    width:auto;
+    height:60px;
+    line-height:60px;
+    font-size:60px;
+    text-align:left;
+    font-weight:500;
+    box-shadow:#e3f2fc 0px -20px 0px inset;
+}
+
+/* --- stats --- */
+
+.stats {
+    position:absolute;
+    top:130px;
+    left:530px;
+    width:180px;
+    height:180px;
+    line-height:25px;
+    padding-right:10px;
+    overflow-y:auto;
+}
+
+    .stats b {
+        color:#fff;
+        background-color:#e4ab4c; /* --- change your accent colour here --- */
+        padding:3px 5px;
+        margin-right:5px;
+    }
+
+/* --- likes & dislikes --- */
+
+.likes {
+    top:350px;
+    left:530px;
+}
+
+.dislikes {
+    top:350px;
+    left:715px;
+}
+
+.likes, .dislikes {
+    position:absolute;
+    width:160px;
+    height:105px;
+    text-align-last:justify;
+    z-index:10;
+    padding-right:10px;
+    overflow-y:auto;
+    text-indent:40px;
+}
+
+    .likes b, .dislikes b {
+        font-size:70px;
+        font-weight:900;
+        margin-top:0px;
+        margin-left:-80px;
+        z-index:-1;
+        position:fixed;
+    }
+
+/* --- quote at the bottom --- */
+
+.infoline {
+    position:absolute;
+    top:490px;
+    left:80px;
+    width:820px;
+    height:50px;
+    text-align:center;
+    font-size:14px;
+    box-sizing:border-box;
+    padding:0px 10px;
+}
+
+.accent {
+    position:absolute;
+    width:100%;
+    height:120px;
+    bottom:0px;
+    left:0px;
+    z-index:0;
+    background-color:#e3f2fc;
+}
+
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    color:#fff;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+<div class="accent"></div>
+    
+<!-- start of navigation -->
+
+<div class="nav">
+    <a href="/">home</a>
+    <a href="/ask">message</a>
+    <a href="/">link three</a>
+    <a href="/">link four</a>
+</div>
+
+<!-- image feature -->
+
+<div class="img"></div>
+
+<!-- big letter -->
+
+<div class="letter">
+    X
+</div>
+
+<!-- quote -->
+
+<div class="infoline">
+    <b>&ldquo;</b> put your quote in here <b>&rdquo;</b>
+</div>
+
+<!-- about info -->
+
+<div class="title">
+    about me
+</div>
+
+<div class="stats">
+    <b>name:</b> x
+    <br>
+    <b>pronouns:</b> x
+    <br>
+    <b>age:</b> x
+    <br>
+    <b>x:</b> x
+    <br>
+    <b>x:</b> x
+    <br>
+    <b>x:</b> x
+    <br>
+    <b>x:</b> x
+</div>
+
+<div class="smallimg"></div>
+
+<div class="likes">
+    <b>+</b> likes
+</div>
+
+<div class="dislikes">
+    <b>-</b> dislikes
+</div>
+
+
+</div> <!-- end of .container -->
+
+<div class="credit"><a class="sf sf-ship" href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"></a></div>
+
+</body></html>
