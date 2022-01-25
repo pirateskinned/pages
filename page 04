@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<head>
+
+<!--
+
+    page theme four: war paint  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    if you need any help, feel free to
+    message me at pirateskinned.tumblr.com
+    
+    ------
+    
+    tumblr controls styling by cyantists.tumblr.com
+    icon font by suiomi.com/font
+
+-->
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="description" content="{MetaDescription}" />
+
+<!-- scripts -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- icon font -- http://suiomi.com/font -->
+
+<link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet">
+
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700|DM+Serif+Display" rel="stylesheet">
+
+<!-- tooltips -->
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+
+<!---- tabs ---->
+
+<script>
+$(document).ready(function() {
+    $('.nav a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
+ 
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        $(this).addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+</script>
+
+<style type="text/css">
+
+/* ---  tumblr controls styling by cyantists
+        http://cyantists.tumblr.com/tumblr_controls/hover --- */
+ 
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:-2px!important;
+    right:0!important;
+    opacity:0;
+    padding-right:38px;
+    /* delete invert(1) from here */
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    /* to here if your blog has a dark background */
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;}
+ 
+iframe.tmblr-iframe:hover {
+    opacity:0.6!important;}
+ 
+.hcontrols {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999999999;}
+ 
+.hcontrols svg {
+    width:14px;
+    height:14px;
+    padding:9px;}
+ 
+.hcontrols svg path {
+    fill:#888888;/* change this to change the color of the icon */}
+
+
+/* --- tooltips & scrollbars --- */
+
+#s-m-t-tooltip {
+    position:absolute;
+    margin-top: 15px;
+    z-index:9999;
+    padding:3px 5px;
+    background:#ffffff;
+    color:#1d1d1d;
+    border-radius:3px;
+    font-size:10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+}
+
+::-webkit-scrollbar-thumb:vertical {background-color:#f6f6f6;}
+::-webkit-scrollbar-button:horizontal {background-color:#f6f6f6;}
+::-webkit-scrollbar {background-color:transparent; width:1px;}
+
+/* --- basics --- */
+
+body {
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+    background-color:#f6f6f6; /* if you change the background colour, make sure you also change the borders around the images! */
+    color:#1d1d1d;
+    font-family: 'DM Sans', sans-serif;
+    font-size:12px;
+    line-height:18px;
+    font-weight:300;
+    text-align:justify;
+    margin:0;
+}
+
+a {
+    color:#1d1d1d;
+    text-decoration:none;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:#1d1d1d;
+        text-decoration:none;
+    }
+
+p a {box-shadow:#ba9e91 0px -2px 0px inset;}
+p a:hover {box-shadow:#ba9e91 0px -17px 0px inset;}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+b, strong, bold {
+    color:#a2261a;
+    font-weight:500;
+    font-family: 'DM Serif Display', serif;
+    font-size:120%;
+}
+
+i, em, italic {
+    color:#a2261a;
+}
+
+u {
+    text-decoration:none;
+    border-bottom:1px solid #a2261a;
+}
+
+s, strike {
+    text-decoration-color:#a2261a;
+}
+
+fl {
+    display:block;
+    float:left;
+    padding:8px 12px;
+    background:#a2261a;
+    color:#fff;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:14px;
+    margin:0px 10px 0px 0px;
+}
+
+/* --- headers --- */
+
+h1 {
+    font-weight:300;
+    color:#a2261a;
+    margin:0px;
+    line-height:22px;
+    padding-left:10px;
+    border-left:5px solid #a4c1c7;
+    font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+    font-weight:300;
+    text-align:center;
+    font-family: 'DM Serif Display', serif;
+    font-size:24px;
+    color:#a4c1c7;
+    background-color:#f6f6f6;
+    line-height:28px;
+    padding:5px;
+    margin:0px;
+}
+
+h3 {
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    word-spacing:1px;
+    font-size:10px;
+    margin:5px 0px;
+    text-align:center;
+    color:#b29790;
+}
+
+/* --- container --- */
+
+.container {
+    position:absolute;
+    margin-top:-300px;
+    margin-left:-500px;
+    top:50%;
+    left:50%;
+    width:1000px;
+    height:600px;
+}
+
+/* --- navigation --- */
+
+.nav {
+    position:absolute;
+    z-index:99999;
+    left:300px;
+    top:0px;
+    width:400px;
+    height:40px;
+    text-align:right;
+    box-sizing:border-box;
+    padding:0px;
+    text-align:center;
+}
+
+    .nav a {
+        display:inline-block;
+        width:auto;
+        height:40px;
+        line-height:40px;
+        text-align:center;
+        font-size:14px;
+        margin:0px 10px;
+        color:#a2261a;
+        letter-spacing:1px;
+        font-weight:500;
+    }
+    
+        .nav a:hover {
+            font-style:italic;
+        }
+        
+    .nav .active {
+        font-style:italic;
+    }
+
+/* --- images --- */
+
+.mb-img {
+    position:absolute;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.img-1 {
+    z-index:10;
+    width:220px;
+    height:320px;
+    top:110px;
+    left:0px;
+}
+
+.img-2 {
+    z-index:20;
+    width:300px;
+    height:200px;
+    top:380px;
+    left:40px;
+    border:10px solid #f6f6f6; /* if you change the background colour, change this to the same colour! */
+}
+
+.img-3 {
+    z-index:40;
+    width:220px;
+    height:200px;
+    top:0px;
+    left:700px;
+    border:10px solid #f6f6f6; /* if you change the background colour, change this to the same colour! */
+}
+
+.img-4 {
+    z-index:30;
+    width:240px;
+    height:320px;
+    top:150px;
+    left:760px;
+}
+
+.img-5 {
+    z-index:50;
+    width:130px;
+    height:130px;
+    top:260px;
+    left:150px;
+    border-radius:100px;
+    border:10px solid #f6f6f6; /* if you change the background colour, change this to the same colour! */
+}
+
+/* --- navigation --- */
+
+.icon-nav {
+    position:absolute;
+    z-index:999;
+    left:710px;
+    top:210px;
+    width:40px;
+    height:330px;
+    text-align:center;
+    box-sizing:border-box;
+    background-color:transparent;
+}
+    
+    .icon-nav a {
+        display:block;
+        width:20px;
+        height:20px;
+        font-size:14px;
+        line-height:20px;
+        box-sizing:border-box;
+        padding:3px;
+        text-align:center;
+        margin:20px 10px;
+        border-radius:3px;
+        color:#ba9e91;
+    }
+
+
+/* --- extras --- */
+
+.tape {
+    position:absolute;
+    z-index:99;
+    width:90px;
+    height:25px;
+    top:360px;
+    left:10px;
+    background-color:#cad3d8; /* change the colour of the tape on the bottom left here */
+    opacity:0.7;
+    transform:rotate(35deg);
+}
+
+.tape-2 {
+    position:absolute;
+    z-index:99;
+    width:110px;
+    height:30px;
+    top:450px;
+    left:930px;
+    background-color:#a2261a; /* change the colour of the tape on the bottom right here */
+    opacity:0.7;
+    transform:rotate(-30deg);
+}
+
+@font-face { font-family: "zerocal"; src: url('https://dl.dropboxusercontent.com/s/x3r5exznaaw50rl/Zerocalcare%20Blackletter.ttf'); format("truetype");}
+
+.quote {
+    position:absolute;
+    z-index:99;
+    width:200px;
+    height:auto;
+    top:90px;
+    left:90px;
+    transform:rotate(10deg);
+    font-family: "zerocal";
+    font-size:40px;
+    line-height:30px;
+    text-align:center;
+    color:#a4c1c7; /* change the colour of the quote here */
+}
+
+/* --- tabs --- */
+
+.tab-bio, .tab-social {
+    display:none;
+}
+
+/* --- stats --- */
+
+.stats {
+    position:absolute;
+    z-index:100;
+    top:50px;
+    left:300px;
+    width:400px;
+    height:500px;
+    background-color:#fff;
+    box-sizing:border-box;
+    border:10px solid #fff;
+    outline:10px solid #f6f6f6;
+    overflow:auto;
+    padding:10px;
+}
+
+.stats-social h2 {
+    padding:0px;
+    margin-top:-30px;
+    margin-bottom:-10px;
+    background-color:transparent;
+}
+
+.stats-social blockquote {
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.social-header {
+    position:relative;
+    top:10px;
+    left:0px;
+    width:360px;
+    height:140px;
+    background-size:cover;
+    background-position:center bottom;
+}
+    
+.social-icon {
+    position:relative;
+    top:-40px;
+    left:130px;
+    width:80px;
+    height:80px;
+    border-radius:100px;
+    border:10px solid #ffffff;
+    background-size:cover;
+    background-position:center center;
+}
+    
+.social-media {
+    float:left;
+    width:110px;
+    height:110px;
+    margin:5px 4px 5px 5px;
+    background-color:#f6f6f6;
+    background-size:cover;
+    background-position:center center;
+}
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    color:#a2261a;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="hcontrols"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216 216" enable-background="new 0 0 216 216" xml:space="preserve"><path d="M106.6,134c14.3,0,26-11.7,26-26s-11.7-26-26-26s-26,11.7-26,26S92.2,134,106.6,134z M106.6,94c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S98.9,94,106.6,94z M40.4,124.6l7.2,3.3c3,1.4,4.4,4.8,3.3,7.9l-2.8,7.4c-2.1,5.7-1.4,11.8,2.1,16.7c3.4,5,9,7.9,15,7.9c2.2,0,4.4-0.4,6.5-1.2l7.4-2.8c0.7-0.3,1.4-0.4,2.2-0.4c2.4,0,4.7,1.4,5.7,3.7l3.3,7.2c3,6.6,9.4,10.7,16.6,10.7s13.6-4.1,16.6-10.7l3.3-7.2c1-2.2,3.2-3.7,5.7-3.7c0.7,0,1.5,0.1,2.2,0.4l7.4,2.8c2.1,0.8,4.3,1.2,6.5,1.2c0,0,0,0,0,0c5.9,0,11.5-3,15-7.9c3.4-5,4.2-11.1,2.1-16.7l-2.8-7.4c-1.1-3.1,0.3-6.5,3.3-7.9l7.2-3.3c6.6-3,10.7-9.4,10.7-16.6s-4.1-13.6-10.7-16.6l-7.2-3.3c-3-1.4-4.4-4.8-3.3-7.9l2.8-7.4c2.1-5.7,1.4-11.8-2.1-16.7c-3.4-5-9-7.9-15-7.9c-2.2,0-4.4,0.4-6.5,1.2l-7.4,2.8c-0.7,0.3-1.4,0.4-2.2,0.4c-2.4,0-4.7-1.4-5.7-3.7l-3.3-7.2c-3-6.6-9.4-10.7-16.6-10.7S93,35.2,90,41.8l-3.3,7.2c-1,2.2-3.2,3.7-5.7,3.7c-0.7,0-1.5-0.1-2.2-0.4l-7.4-2.8c-2.1-0.8-4.3-1.2-6.5-1.2c-5.9,0-11.5,3-15,7.9c-3.4,5-4.2,11.1-2.1,16.7l2.8,7.4c1.1,3.1-0.3,6.5-3.3,7.9l-7.2,3.3c-6.6,3-10.7,9.4-10.7,16.6S33.8,121.6,40.4,124.6z M45.3,102.3l7.2-3.3c8.7-4,12.9-14.1,9.5-23l-2.8-7.4c-1-2.7,0-4.7,0.7-5.7c1.6-2.4,4.6-3.4,7.4-2.3l7.4,2.8c2.1,0.8,4.2,1.2,6.4,1.2c0,0,0,0,0,0c7.1,0,13.6-4.2,16.6-10.7l3.3-7.2c1.5-3.4,4.7-3.7,5.7-3.7s4.1,0.3,5.7,3.7l3.3,7.2c3,6.5,9.5,10.7,16.6,10.7c2.2,0,4.3-0.4,6.4-1.2l7.4-2.8c2.8-1,5.7,0,7.4,2.3c0.7,1,1.7,3,0.7,5.7l-2.8,7.4c-3.3,8.9,0.8,19,9.5,23l7.2,3.3c3.4,1.5,3.7,4.7,3.7,5.7s-0.3,4.1-3.7,5.7l-7.2,3.3c-8.7,4-12.9,14.1-9.5,23l2.8,7.4c1,2.7,0,4.7-0.7,5.7c-1.6,2.4-4.6,3.4-7.4,2.3l-7.4-2.8c-2.1-0.8-4.2-1.2-6.4-1.2c-7.1,0-13.6,4.2-16.6,10.7l-3.3,7.2c-1.5,3.4-4.7,3.7-5.7,3.7s-4.1-0.3-5.7-3.7l-3.3-7.2c-3-6.5-9.5-10.7-16.6-10.7c-2.2,0-4.3,0.4-6.4,1.2l-7.4,2.8c-2.8,1-5.7,0-7.4-2.3c-0.7-1-1.7-3-0.7-5.7l2.8-7.4c3.3-8.9-0.8-19-9.5-23l-7.2-3.3c-3.4-1.5-3.7-4.7-3.7-5.7S41.9,103.9,45.3,102.3z"/></svg></div>
+
+
+<div class="container">
+    
+<!-- start of navigation -->
+
+<div class="nav">
+    <a href="#tab1" class="active">statistics</a>
+    <a href="#tab2">biography</a>
+    <a href="#tab3">social</a>
+</div>
+
+<!-- images -->
+<!-- change the images here! replace YOUR_URL_HERE with the url of your image. make sure you keep the ' ' around the url! -->
+
+<!-- top left -->
+<div class="mb-img img-1" style="background-image:url('YOUR_URL_HERE');"></div>
+
+<!-- bottom left -->
+<div class="mb-img img-2" style="background-image:url('YOUR_URL_HERE');"></div>
+
+<!-- top right -->
+<div class="mb-img img-3" style="background-image:url('YOUR_URL_HERE');"></div>
+
+<!-- bottom right -->
+<div class="mb-img img-4" style="background-image:url('YOUR_URL_HERE');"></div>
+
+<!-- circle -->
+<div class="mb-img img-5" style="background-image:url('YOUR_URL_HERE');"></div>
+    
+<!-- navigation -->
+    
+<div class="icon-nav">
+        <a href="/" title="link one">
+            <span class="sf sf-balloons"></span>
+        </a>
+        <a href="/" title="link two">
+            <span class="sf sf-bee"></span>
+        </a>
+        <a href="/" title="link three">
+            <span class="sf sf-duck"></span>
+        </a>
+        <a href="/" title="link four">
+            <span class="sf sf-band-aid"></span>
+        </a>
+        <a href="/" title="link five">
+            <span class="sf sf-jupiter"></span>
+        </a>
+        <a href="/" title="link six">
+            <span class="sf sf-orange"></span>
+        </a>
+        <a href="/" title="link seven">
+            <span class="sf sf-gaming-controller"></span>
+        </a>
+        <a href="/" title="link eight">
+            <span class="sf sf-feather"></span>
+        </a>
+    </div>
+
+<!-- extras -->
+    
+<div class="tape"></div>
+<div class="tape-2"></div>
+    
+<div class="quote">your quote here</div>
+
+    <div class="tabs">
+
+        <!---- start of statistics tab ---->
+        
+        <div id="tab1" class="tab tab-stats active">
+    
+            <div class="stats">
+                <h1>statistics</h1>
+                
+                <br>
+                
+                <h3>basics</h3>
+                
+                <br>
+                
+                <b>name</b>
+                <br>
+                full name
+                
+                <br><br>
+                
+                <b>age</b>
+                <br>
+                number
+                
+                <br><br>
+                
+                <b>gender & pronouns</b>
+                <br>
+                cis female, she/her
+                
+                <br><br>
+                
+                <b>faceclaim</b>
+                <br>
+                actress
+                
+                <br><br>
+                
+                <b>occupation</b>
+                <br>
+                normal text
+                
+                <br><br>
+                
+                <b>location</b>
+                <br>
+                normal text
+                
+                <br><br>
+                
+                <h3>appearance</h3>
+                
+                <b>title</b>
+                <br>
+                normal text
+                
+                <br><br>
+                
+                <b>title</b>
+                <br>
+                normal text
+                
+                <br><br>
+                
+                <b>title</b>
+                <br>
+                normal text
+                
+                <br><br>
+                
+                <b>title</b>
+                <br>
+                normal text
+                
+                <h3>connections</h3>
+                
+                <b>title</b>
+                <br>
+                normal text
+                
+                <br><br>
+                
+                <b>title</b>
+                <br>
+                normal text
+                
+                <br><br>
+                
+            </div>
+            
+        </div>
+        
+        <!---- start of biography tab ---->
+
+        <div id="tab2" class="tab tab-bio">
+            <div class="stats">
+                <h1>biography</h1>
+                <br>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum posuere neque, eget euismod enim elementum ac. Duis quis egestas est, sit amet interdum purus. Vestibulum at condimentum dolor, quis bibendum leo.</p>
+                </blockquote>
+                
+                <h2>chapter one</h2>
+                <h3>a quote or subtitle in here</h3>
+                
+                <p><fl>P</fl>raesent quam odio, tempus in finibus vitae, rutrum eu metus. Sed sollicitudin at nibh id aliquam. Morbi elementum ligula elementum cursus feugiat. Pellentesque ut augue at ligula fermentum cursus vel vitae risus. Sed semper purus vel maximus mattis. Donec dignissim semper lectus, at hendrerit risus interdum at. <b>Mauris eu enim</b> eu dui porta sagittis. Aliquam mauris nibh, accumsan faucibus aliquet quis, accumsan ac tellus. Vestibulum accumsan sed sem vel aliquam. Vivamus non dui a lectus facilisis efficitur vel at risus. Aliquam finibus tortor nec mauris tincidunt, id interdum massa blandit. Duis ut neque eget ipsum egestas suscipit sit amet sit amet est.</p>
+                
+                <p>Aliquam erat volutpat. Vivamus pharetra lobortis leo, sagittis ultrices mauris blandit ac. <i>Integer sollicitudin faucibus neque,</i> non sodales nibh euismod ac. Sed fringilla pharetra nibh. Pellentesque tincidunt dui molestie mi consequat, quis scelerisque ante pretium. Aliquam porta ultrices tempor. Sed venenatis egestas est, congue accumsan nisl elementum at. Vestibulum iaculis suscipit urna, at tempor quam vulputate sed.</p>
+                
+                <h2>chapter two</h2>
+                <h3>a quote or subtitle in here</h3>
+                
+                <p><fl>L</fl>orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum posuere neque, eget euismod enim elementum ac. Duis quis egestas est, sit amet interdum purus. Vestibulum at condimentum dolor, quis bibendum leo.Praesent quam odio, tempus in finibus vitae, rutrum eu metus. Sed sollicitudin at nibh id aliquam. Morbi elementum ligula elementum cursus feugiat.</p>
+                
+                <blockquote>
+                    <p><b>&ldquo;</b> Pellentesque ut augue at ligula fermentum cursus vel vitae risus. Sed semper purus vel maximus mattis. Donec dignissim semper lectus, at hendrerit risus interdum at. Mauris eu enim eu dui porta sagittis. Aliquam mauris nibh, accumsan faucibus aliquet quis, accumsan ac tellus. Vestibulum accumsan sed sem vel aliquam. Vivamus non dui a lectus facilisis efficitur vel at risus. Aliquam finibus tortor nec mauris tincidunt, id interdum massa blandit. Duis ut neque eget ipsum egestas suscipit sit amet sit amet est. <b>&rdquo;</b></p>
+                </blockquote>
+                
+                <p>Aliquam erat volutpat. Vivamus pharetra lobortis leo, sagittis ultrices mauris blandit ac. Integer sollicitudin faucibus neque, non sodales nibh euismod ac. Sed fringilla pharetra nibh. Pellentesque tincidunt dui molestie mi consequat, quis scelerisque ante pretium. Aliquam porta ultrices tempor.</p>
+                
+                <p>Sed venenatis egestas est, congue accumsan nisl elementum at. Vestibulum iaculis suscipit urna, at tempor quam vulputate sed.</p>
+            </div>
+            
+        </div>
+        
+        <!---- start of social tab ---->
+
+        <div id="tab3" class="tab tab-social">
+            <div class="stats stats-social">
+                <h1>social</h1>
+                
+                <div class="social-header" style="background-image:url('YOUR_URL_HERE');"></div>
+                <div class="social-icon" style="background-image:url('YOUR_URL_HERE');"></div>
+                
+                <h2>first last</h2>
+                <blockquote><p>
+                    icons by <a href="https://pansdora.tumblr.com/icons">pansdora</a>. header by <a href="https://tywvin.tumblr.com/headers">tywvin</a>.
+                </p></blockquote>
+                
+                <div class="social-media" style="background-image:url('YOUR_URL_HERE');"></div>
+                <div class="social-media" style="background-image:url('YOUR_URL_HERE');"></div>
+                <div class="social-media" style="background-image:url('YOUR_URL_HERE');"></div>
+                
+                <div class="social-media" style="background-image:url('YOUR_URL_HERE');"></div>
+                <div class="social-media" style="background-image:url('YOUR_URL_HERE');"></div>
+                <div class="social-media" style="background-image:url('YOUR_URL_HERE');"></div>
+                
+            </div>
+        </div>
+        
+    </div> <!--- close of tabs --->
+
+</div> <!-- end of .container -->
+
+
+<!-- credit -- do not touch this -->
+<div class="credit"><a class="sf sf-ship" href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"></a></div>
+
+</body></html>
