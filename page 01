@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<head>
+
+<!--
+
+    page theme one: higher  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    if you need any help, feel free to
+    message me at pirateskinned.tumblr.com
+    
+    ------
+    
+    tumblr controls styling by odeysseus.tumblr.com
+
+-->
+
+<title>higher</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="description" content="{MetaDescription}" />
+
+<!-- scripts -->
+
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- masonry -->
+
+<script src="http://static.tumblr.com/6hsqxdt/QBym35odk/jquery.masonry.js"></script>
+
+<script>
+    $(document).ready(function(){
+          $('.entries').masonry({
+            // options
+            itemSelector : '.muse'
+            //columnWidth : 550
+          });
+    });
+</script>
+
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i" rel="stylesheet">
+
+<!-- icon font -- http://suiomi.com/font -->
+
+<link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet">
+
+<!-- tooltips -->
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+
+<style type="text/css">
+
+/* ---  tumblr controls styling by odeysseus
+        http://odeysseus.tumblr.com/post/163708246967/ --- */
+
+.tmblr-iframe {
+    white-space:nowrap;
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+    filter: invert(100%);
+    opacity:.2;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    position:fixed!important;
+    right:-10px!important;
+    transform:scale(0.7,0.7);
+}
+
+.tmblr-iframe:hover {
+    opacity:1;
+}
+
+/* --- tooltips & scrollbars --- */
+
+#s-m-t-tooltip {
+    position:absolute;
+    margin-top: 15px;
+    z-index:9999;
+    padding:3px 5px;
+    background:#ffffff;
+    color:#1d1d1d;
+    border-radius:3px;
+    font-size:10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+}
+
+::-webkit-scrollbar-thumb:vertical {background-color:#5f9cbe;}
+::-webkit-scrollbar-button:horizontal {background-color:#5f9cbe;}
+::-webkit-scrollbar {background-color:transparent; width:3px;}
+
+/* --- basics --- */
+
+body {
+    background-color:#FFFFFF;
+    background-image:url('https://static.tumblr.com/ba4f45b9c0e5b8010315cb61a1f717b7/k9k7gco/9Zbpjeuwg/tumblr_static_a5y2w6hsbpk4wowoc8o84kccw.png');
+    background-attachment:fixed;
+    background-position:center center;
+    background-repeat:repeat;
+    background-size:auto;
+    color:#1d1d1d;
+    font-family: 'ABeeZee', sans-serif;
+    font-size:10px;
+    line-height:15px;
+    font-weight:400;
+    text-align:justify;
+    margin:0;
+}
+
+a {
+    color:#1d1d1d;
+    text-decoration:none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:#1d1d1d;
+        text-decoration:none;
+    }
+    
+p a, .description a {box-shadow:#dcd3d0 0px -5px 0px inset;}
+p a:hover, .description a:hover {box-shadow:#dcd3d0 0px -11px 0px inset;}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+b, strong, bold {
+    color:#495b65;
+    font-weight:700;
+}
+
+i, em, italic {
+    color:#58707a;
+}
+
+u {
+    text-decoration:none;
+    border-bottom:1px solid #58707a;
+}
+
+s, strike {
+    text-decoration-color:#a15548;
+}
+
+small, sub, sup, big {
+    font-size:10px;
+    line-height:14px;
+    vertical-align:baseline;
+}
+
+blockquote {
+    padding:0px 5px 0px 15px;
+    border-left:1px solid #eeeeee;
+    margin-left:5px;
+    margin-right:0px;
+}
+    
+    blockquote blockquote {
+        margin-right:0px;
+    }
+
+pre {
+    font-family: 'ABeeZee', sans-serif;
+    font-size:10px;
+    text-transform:uppercase;
+    font-weight:700;
+    padding:10px;
+    background-color:#a15548;
+    color:#ffffff;
+    border-radius:6px;
+}
+
+    pre i, pre em, pre b, pre strong, pre a {
+        color:#ffffff;
+    }
+
+ul {
+    padding-left:15px;
+}
+
+    ul li {
+        list-style-type:none;
+    }
+    
+        ul li:before {
+          content: "— ";
+          text-indent: -5px;
+        }
+
+/* --- header styles --- */
+
+h1 {
+    margin:0px;
+    font-weight:bold;
+    color:#495b65;
+    text-align:left;
+}
+
+h2 {
+    font-weight:normal;
+    color:#a15548;
+    text-align:left;
+    text-transform:uppercase;
+    font-size:12px;
+}
+
+    h2 b, b h2, h2 i, i h2,
+    h2 strong, strong h2, h2 em, em h2 {
+        color:#a15548;
+    }
+    
+
+/* --- container --- */
+
+.container {
+    position:absolute;
+    margin-top:-300px;
+    margin-left:-450px;
+    top:50%;
+    left:50%;
+    width:900px;
+    height:600px;
+    overflow:hidden;
+    border-radius:6px;
+    background-color:#f6f6f6;
+    background-image:url('https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border:1px solid #eeeeee;
+    box-shadow:rgba(0,0,0,.05) 1px 1px 3px;
+}
+
+/* --- sidebar --- */
+
+.sidebar {
+    position:absolute;
+    z-index:7;
+    top:100px;
+    left:60px;
+    width:260px;
+    height:150px;
+    background:#f6f6f6;
+    border-radius:6px;
+    border:1px solid #eeeeee;
+    box-shadow:rgba(0,0,0,.05) 1px 1px 3px;
+}
+
+/* --- description + sidebar icon --- */
+
+.sidebar img {
+    position:absolute;
+    width:70px;
+    height:70px;
+    margin:20px;
+    border-radius:6px;
+}
+
+.description {
+    position:absolute;
+    z-index:5;
+    left:90px;
+    top:0px;
+    width:170px;
+    height:112px;
+    padding:20px;
+    box-sizing:border-box;
+    font-size:10px;
+    line-height:18px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    text-align-last:justify;
+}
+
+/* --- navigation --- */
+
+.nav {
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:260px;
+    height:40px;
+    text-align:center;
+    box-sizing:border-box;
+    padding:0px;
+    border-radius:0px 0px 6px 6px;
+    background-color:#ffffff;
+    border-top:1px solid #eeeeee;
+}
+
+    .nav a {
+        -webkit-transition-duration: 0.6s;
+        transition-duration: 0.6s;
+        display:inline-block;
+        width:auto;
+        height:14px;
+        line-height:14px;
+        text-align:center;
+        font-size:10px;
+        margin:13px 5px;
+        color:#1d1d1d;
+        border-bottom:1px solid transparent;
+    }
+    
+        .nav a:hover {
+            border-bottom:1px solid #1d1d1d;
+        }
+
+/* --- museContainer --- */
+
+.museContainer {
+    position:absolute;
+    z-index:3;
+    top:0px;
+    right:0px;
+    width:547px;
+    height:600px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    background-color:transparent;
+    box-sizing:border-box;
+    padding:50px 20px 50px 20px;
+    border-radius:6px;
+}
+
+/* --- muse cards --- */
+
+.muse {
+    width:179px;
+    padding:20px;
+    float:left;
+    overflow:hidden;
+    margin:10px;
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #eeeeee;
+    box-shadow:rgba(0,0,0,.05) 1px 1px 3px;
+}
+    .muse .icons {
+        position:absolute;
+        margin:-5px -5px 0px -5px;
+    }
+    
+    .muse .icons img {
+        width:90px;
+        height:90px;
+        float:left;
+        border-radius:6px;
+    }
+    
+    .muse .icons img:nth-of-type(1) {margin:0px 10px 10px 0px;}
+    .muse .icons img:nth-of-type(2) {margin:0px 0px 10px 0px;} 
+    
+    .muse table {
+        margin-top:100px;
+    }
+    
+    .muse .links {
+        margin:10px -20px -20px -20px;
+        width:219px;
+        height:auto;
+        text-align:center;
+        box-sizing:border-box;
+        padding:0px;
+        border-radius:0px 0px 6px 6px;
+        background-color:#ffffff;
+        border-top:1px solid #eeeeee;
+    }
+    
+        .muse .links a {
+            -webkit-transition-duration: 0.6s;
+            transition-duration: 0.6s;
+            display:inline-block;
+            width:auto;
+            height:14px;
+            line-height:14px;
+            text-align:center;
+            font-size:10px;
+            margin:13px 5px;
+            color:#1d1d1d;
+            border-bottom:1px solid transparent;
+        }
+        
+            .muse .links a:hover {
+                border-bottom:1px solid #1d1d1d;
+            }
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    color:#495b65;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+
+<!-- start of .sidebar -->
+
+<div class="sidebar">
+
+    <img src="http://i.imgur.com/19FZFp9.png">
+    
+    <div class="description">
+        this is where you can put your lovely muses.
+        all icons used were created by <a href="http://acuite.tumblr.com/icons">acuite</a>.
+    </div>
+    
+    <!-- start of navigation -->
+
+    <div class="nav">
+        <a href="/">home</a>
+        <a href="/ask">message</a>
+        <a href="/">about</a>
+        <a href="/">navigate</a>
+    </div>
+    
+</div>
+
+<!-- end of .sidebar -->
+
+<!-- start of .museContainer -->
+
+<div class="museContainer">
+
+    <!-- start of .entries -->
+    
+    <div class="entries">
+    
+        <!-- start of .muse / to add more muses, simply copy and paste this entire block -->
+        <div class="muse">
+        
+            <div class="icons">
+                <img src="http://i.imgur.com/zIIsYZl.png">
+                <img src="http://i.imgur.com/GBnnwMs.png">
+            </div>
+            
+            <table style="width: 100%;">
+                <tbody>
+                    <!-- want another row? copy from here... -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">name:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <!-- ...to here! -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">age:</td>
+                        <td style="width: 80%;">twenty-five</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">faceclaim:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">occupation:</td>
+                        <td style="width: 80%;">something</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">status:</td>
+                        <td style="width: 80%;">open / taken</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <blockquote>this is where you can put a quote or extra information</blockquote>
+
+        	<!-- add as many links as you like, but keep in mind that it looks best with only one line of links! -->
+			<div class="links">
+                <a href="/">one</a>
+				<a href="/">two</a>
+				<a href="/">three</a>
+            </div>
+        </div>
+        <!-- end of .muse -->
+
+		<!-- start of .muse / to add more muses, simply copy and paste this entire block -->
+        <div class="muse">
+        
+            <div class="icons">
+                <img src="http://i.imgur.com/zIIsYZl.png">
+                <img src="http://i.imgur.com/GBnnwMs.png">
+            </div>
+            
+            <table style="width: 100%;">
+                <tbody>
+                    <!-- want another row? copy from here... -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">name:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <!-- ...to here! -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">age:</td>
+                        <td style="width: 80%;">twenty-five</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">faceclaim:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">occupation:</td>
+                        <td style="width: 80%;">something</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">status:</td>
+                        <td style="width: 80%;">open / taken</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <blockquote>this is where you can put a quote or extra information</blockquote>
+
+        	<!-- add as many links as you like, but keep in mind that it looks best with only one line of links! -->
+			<div class="links">
+                <a href="/">one</a>
+				<a href="/">two</a>
+				<a href="/">three</a>
+            </div>
+        </div>
+        <!-- end of .muse -->
+
+		<!-- start of .muse / to add more muses, simply copy and paste this entire block -->
+        <div class="muse">
+        
+            <div class="icons">
+                <img src="http://i.imgur.com/zIIsYZl.png">
+                <img src="http://i.imgur.com/GBnnwMs.png">
+            </div>
+            
+            <table style="width: 100%;">
+                <tbody>
+                    <!-- want another row? copy from here... -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">name:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <!-- ...to here! -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">age:</td>
+                        <td style="width: 80%;">twenty-five</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">faceclaim:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">occupation:</td>
+                        <td style="width: 80%;">something</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">status:</td>
+                        <td style="width: 80%;">open / taken</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <blockquote>this is where you can put a quote or extra information</blockquote>
+
+        	<!-- add as many links as you like, but keep in mind that it looks best with only one line of links! -->
+			<div class="links">
+                <a href="/">one</a>
+				<a href="/">two</a>
+				<a href="/">three</a>
+            </div>
+        </div>
+        <!-- end of .muse -->
+
+		<!-- start of .muse / to add more muses, simply copy and paste this entire block -->
+        <div class="muse">
+        
+            <div class="icons">
+                <img src="http://i.imgur.com/zIIsYZl.png">
+                <img src="http://i.imgur.com/GBnnwMs.png">
+            </div>
+            
+            <table style="width: 100%;">
+                <tbody>
+                    <!-- want another row? copy from here... -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">name:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <!-- ...to here! -->
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">age:</td>
+                        <td style="width: 80%;">twenty-five</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">faceclaim:</td>
+                        <td style="width: 80%;">first last</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">occupation:</td>
+                        <td style="width: 80%;">something</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%; font-weight:bold;">status:</td>
+                        <td style="width: 80%;">open / taken</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <blockquote>this is where you can put a quote or extra information</blockquote>
+
+        	<!-- add as many links as you like, but keep in mind that it looks best with only one line of links! -->
+			<div class="links">
+                <a href="/">one</a>
+				<a href="/">two</a>
+				<a href="/">three</a>
+            </div>
+        </div>
+        <!-- end of .muse -->
+        
+    </div> <!-- end of .entries -->
+
+</div> <!-- end of .museContainer -->
+
+</div> <!-- end of .container -->
+
+<div class="credit"><a class="sf sf-boat" href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"></a></div>
+
+</body></html>
