@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<head>
+
+<!--
+
+    page theme five: høyere  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    if you need any help, feel free to
+    message me at pirateskinned.tumblr.com
+    
+    ------
+    
+    tumblr controls styling by odeysseus.tumblr.com
+
+-->
+
+<title>høyere</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="description" content="{MetaDescription}" />
+
+<!-- scripts -->
+
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i" rel="stylesheet">
+
+<!-- icon font -- http://suiomi.com/font -->
+
+<link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet">
+
+<!-- tooltips -->
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:true,
+                tip_delay_time:30,
+                tip_fade_speed:300,
+                attribute:"title"
+            });
+        });
+    })(jQuery);
+</script>
+
+<style type="text/css">
+
+/* ---
+
+    CHANGE THE COLOURS HERE
+    
+--- */
+
+:root {
+    --background:#ffffff;
+    --text:#4f4e4e;
+    --sidebar:#f6f6f6;
+    --border:#eeeeee;
+    --links:#c1c7c7;
+    --accent-one:#90bbc2;
+    --accent-two:#c96e42;
+}
+
+/* ---  tumblr controls styling by odeysseus
+        http://odeysseus.tumblr.com/post/163708246967/ --- */
+
+.tmblr-iframe {
+    white-space:nowrap;
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+    filter: invert(100%);
+    opacity:.2;
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    position:fixed!important;
+    right:-10px!important;
+    transform:scale(0.7,0.7);
+}
+
+.tmblr-iframe:hover {
+    opacity:1;
+}
+
+/* --- tooltips & scrollbars --- */
+
+#s-m-t-tooltip {
+    position:absolute;
+    margin-top: 15px;
+    z-index:9999;
+    padding:3px 5px;
+    background:var(--background);
+    color:var(--text);
+    border-radius:3px;
+    font-size:10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+}
+
+::-webkit-scrollbar-thumb:vertical {background-color:var(--accent-two);}
+::-webkit-scrollbar-button:horizontal {background-color:var(--accent-two);}
+::-webkit-scrollbar {background-color:transparent; width:3px;}
+
+/* --- basics --- */
+
+body {
+    background-color:var(--background);
+    background-image:url('https://static.tumblr.com/ba4f45b9c0e5b8010315cb61a1f717b7/k9k7gco/9Zbpjeuwg/tumblr_static_a5y2w6hsbpk4wowoc8o84kccw.png');
+    background-attachment:fixed;
+    background-position:center center;
+    background-repeat:repeat;
+    background-size:auto;
+    color:var(--text);
+    font-family: 'ABeeZee', sans-serif;
+    font-size:10px;
+    line-height:15px;
+    font-weight:400;
+    text-align:justify;
+    margin:0;
+}
+
+a {
+    color:var(--text);
+    text-decoration:none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:var(--text);
+        text-decoration:none;
+    }
+    
+p a, .description a {box-shadow:var(--links) 0px -5px 0px inset;}
+p a:hover, .description a:hover {box-shadow:var(--links) 0px -11px 0px inset;}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+b, strong, bold {
+    color:var(--accent-one);
+    font-weight:700;
+}
+
+i, em, italic {
+    color:var(--accent-two);
+}
+
+u {
+    text-decoration:none;
+}
+
+    .firstletter, u {
+        display:block;
+        float:left;
+        padding:12px 14px;
+        background:var(--accent-two);
+        color:var(--background);
+        font-weight:700;
+        text-transform:uppercase;
+        font-size:14px;
+        margin:0px 10px 0px 0px;
+        border-radius:6px;
+    }
+
+s, strike {
+    text-decoration-color:var(--accent-two);
+}
+
+small, sub, sup, big {
+    font-size:10px;
+    line-height:14px;
+    vertical-align:baseline;
+}
+
+blockquote {
+    padding:0px 5px 0px 15px;
+    border-left:1px solid var(--border);
+    margin-left:5px;
+    margin-right:0px;
+}
+    
+    blockquote blockquote {
+        margin-right:0px;
+    }
+
+pre {
+    font-family: 'ABeeZee', sans-serif;
+    font-size:10px;
+    text-transform:uppercase;
+    font-weight:700;
+    padding:10px;
+    background-color:var(--accent-two);
+    color:var(--background);
+    border-radius:6px;
+}
+
+    pre i, pre em, pre b, pre strong, pre a {
+        color:var(--background);
+    }
+
+ul {
+    padding-left:15px;
+}
+
+    ul li {
+        list-style-type:none;
+    }
+    
+        ul li:before {
+          content: "— ";
+          text-indent: -5px;
+        }
+
+/* --- header styles --- */
+
+h1 {
+    margin:0px 0px 10px 0px;
+    font-weight:bold;
+    color:var(--accent-one);
+    text-align:left;
+    font-size:22px;
+}
+
+h2 {
+    font-weight:normal;
+    color:var(--accent-two);
+    text-align:left;
+    text-transform:uppercase;
+    font-size:16px;
+}
+
+    h2 b, b h2, h2 i, i h2,
+    h2 strong, strong h2, h2 em, em h2 {
+        color:var(--accent-two);
+    }
+    
+h3 {
+    margin:0px 0px 5px 0px;
+    font-weight:bold;
+    color:var(--accent-one);
+    text-align:left;
+    font-size:16px;
+}
+
+h4 {
+    font-size:10px;
+    letter-spacing:2px;
+    font-weight:normal;
+    text-transform:uppercase;
+    text-align:left;
+    margin:0px;
+}
+    
+
+/* --- container --- */
+
+.container {
+    position:absolute;
+    margin-top:-300px;
+    margin-left:-450px;
+    top:50%;
+    left:50%;
+    width:900px;
+    height:600px;
+    overflow:hidden;
+    border-radius:6px;
+    background-color:var(--sidebar);
+    background-image:url('https://static.tumblr.com/aaeb5ffa11616df82902281c4c0c77a5/6amorxd/ARIq5lgyf/tumblr_static_9vqsr8c8abs44wgwc0so044cc.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border:1px solid var(--border);
+    box-shadow:rgba(0,0,0,.05) 1px 1px 3px;
+}
+
+/* --- sidebar --- */
+
+.sidebar {
+    position:absolute;
+    z-index:7;
+    top:100px;
+    left:60px;
+    width:260px;
+    height:150px;
+    background:var(--sidebar);
+    border-radius:6px;
+    border:1px solid var(--border);
+    box-shadow:rgba(0,0,0,.05) 1px 1px 3px;
+}
+
+/* --- description + sidebar icon --- */
+
+.sidebar img {
+    position:absolute;
+    width:70px;
+    height:70px;
+    margin:20px;
+    border-radius:6px;
+}
+
+.description {
+    position:absolute;
+    z-index:5;
+    left:90px;
+    top:0px;
+    width:170px;
+    height:112px;
+    padding:20px;
+    box-sizing:border-box;
+    font-size:10px;
+    line-height:18px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    text-align-last:justify;
+}
+
+/* --- navigation --- */
+
+.nav {
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:260px;
+    height:40px;
+    text-align:center;
+    box-sizing:border-box;
+    padding:0px;
+    border-radius:0px 0px 6px 6px;
+    background-color:var(--background);
+    border-top:1px solid var(--border);
+}
+
+    .nav a {
+        -webkit-transition-duration: 0.6s;
+        transition-duration: 0.6s;
+        display:inline-block;
+        width:auto;
+        height:14px;
+        line-height:14px;
+        text-align:center;
+        font-size:10px;
+        margin:13px 5px;
+        color:var(--text);
+        border-bottom:1px solid transparent;
+    }
+    
+        .nav a:hover {
+            border-bottom:1px solid var(--text);
+        }
+        
+/* --- previous + next muses --- */
+
+.muse-pagination {
+    position:absolute;
+    top:290px;
+    left:60px;
+    width:260px;
+    height:150px;
+}
+
+    .muse-pagination-link {
+        position:relative;
+        float:left;
+        width:110px;
+        height:80px;
+        background-color:var(--sidebar);
+        border-radius:6px;
+        border:1px solid var(--border);
+        box-shadow:rgba(0,0,0,.05) 1px 1px 3px;
+        overflow:hidden;
+    }
+    
+        .muse-pagination-link img {
+            width:80px;
+            height:80px;
+            opacity:0.8;
+        }
+    
+        .muse-pagination-link span {
+            position:absolute;
+            top:25px;
+            right:-25px;
+            height:30px;
+            width:80px;
+            line-height:30px;
+            text-align:center;
+            background-color:var(--background);
+            border-top:1px solid var(--border);
+            transform:rotate(-90deg);
+        }
+        
+        .muse-pagination-link .icon {
+            position:absolute;
+            z-index:500;
+            top:0px;
+            left:0px;
+            width:80px;
+            height:80px;
+            text-align:center;
+            line-height:85px;
+            color:var(--background);
+            font-size:16px;
+        }
+
+/* --- about container --- */
+
+.about-container {
+    position:absolute;
+    z-index:3;
+    top:0px;
+    right:0px;
+    width:600px;
+    height:600px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    background-color:transparent;
+    box-sizing:border-box;
+    padding:60px 60px 40px 100px;
+    border-radius:6px;
+}
+
+/* --- about cards --- */
+
+.stats, .traits, .skills, .bio, .con {
+    position:relative;
+    width:100%;
+    height:auto;
+    margin-bottom:20px;
+    background-color:var(--background);
+    border-radius:6px;
+    border:1px solid var(--border);
+    box-shadow:rgba(0,0,0,.05) 1px 1px 3px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+/* --- stats --- */
+
+.stats {
+    height:240px;
+}
+
+    .stats-images {
+        position:absolute;
+        top:20px;
+        left:20px;
+        width:90px;
+        height:auto;
+    }
+        
+        .stats-images img {
+            width:90px;
+            height:90px;
+            float:left;
+            border-radius:6px;
+        }
+        
+            .stats-images img:nth-of-type(1) {
+                margin-bottom:20px;
+            }
+    
+    .stats-text {
+        position:absolute;
+        top:0px;
+        right:0px;
+        height:240px;
+        width:330px;
+        overflow:auto;
+        box-sizing:border-box;
+        padding:20px 20px 18px 20px;
+    }
+    
+    .stats-text table tr {
+        height:18px;
+    }
+    
+    .stats-text table tr td:nth-of-type(1) {
+        width:30%;
+        font-weight:bold;
+    }
+    
+    .stats-text table tr td:nth-of-type(2) {
+        width:70%;
+    }
+    
+/* --- traits --- */    
+
+.traits {
+    padding:20px;
+    text-align:center;
+}
+
+    .traits span {
+        display:inline-block;
+        padding:5px 10px;
+        border-radius:6px;
+        margin:5px;
+        background-color:var(--accent-one);
+        color:var(--background);
+    }
+
+/* --- skills --- */   
+
+.skills {
+    padding:20px 20px 0px 20px;
+}
+
+    .skills:after {
+        clear:both;
+    }
+
+    .skill-bar {
+        float:left;
+        width:180px;
+        height:30px;
+        margin-bottom:20px;
+        font-weight:bold;
+        font-size:110%;
+        line-height:150%;
+    }
+    
+        .skill-bar:nth-of-type(odd) {
+            margin-right:30px;
+        }
+    
+        .bar {
+            width:100%;
+            height:10px;
+            background-color:var(--accent-two);
+            border-radius:6px;
+            border:1px solid var(--border);
+        }
+
+/* --- biography --- */   
+
+.bio {
+    padding:20px;
+}
+
+/* --- connections --- */   
+
+.con {
+    padding:20px 20px 0px 20px;
+}
+
+    .connection {
+        width:100%;
+        height:auto;
+        margin-bottom:20px;
+    }
+    
+        .connection img {
+            width:90px;
+            height:90px;
+            border-radius:6px;
+            float:left;
+            margin:0px 15px 15px 0px;
+        }
+        
+        .connection:after {
+            clear:both;
+        }
+        
+    .con hr {
+        width:100%;
+        height:1px;
+        background-color:var(--border);
+        margin:0px 0px 20px 0px;
+        border:none;
+    }
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    text-align:center;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    color:var(--accent-one);
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+
+<!-- start of .sidebar -->
+
+<div class="sidebar">
+
+    <img src="http://i.imgur.com/8xzGUrt.png">
+    
+    <div class="description">
+        a biography page to match with themes hærra + higher.
+        all icons used were created by <a href="http://acuite.tumblr.com/icons">acuite</a>.
+    </div>
+    
+    <!-- start of navigation -->
+
+    <div class="nav">
+        <a href="/">home</a>
+        <a href="/ask">message</a>
+        <a href="/">about</a>
+        <a href="/">navigate</a>
+    </div>
+    
+</div>
+
+<!-- end of .sidebar -->
+
+<!-- start of muse pagination
+    you can use this to link to connected muses
+    
+    don't want this? simply delete everything between here
+    and where it says the muse pagination ends
+    
+    change the link under href="/" -->
+
+<div class="muse-pagination">
+    
+    <a href="/" title="learn more about juniper">
+        <div class="muse-pagination-link" style="margin-right:35px;">
+        
+            <img src="http://i.imgur.com/SEcpnpX.png">
+            <span>juniper</span>
+            
+            <div class="icon sf sf-arrow-left"></div>
+            
+        </div>
+    </a>
+    
+    <a href="/" title="learn more about waverly">
+        <div class="muse-pagination-link">
+        
+            <img src="http://i.imgur.com/aqp9Jo6.png">
+            <span>waverly</span>
+            
+            <div class="icon sf sf-arrow-right"></div>
+            
+        </div>
+    </a>
+    
+</div>
+
+<!-- end of muse pagination -->
+
+<!-- start of about container
+
+    all items in here can be moved around to have them
+    in whatever order you want. you can also duplicate
+    them if you'd like.
+    
+    there are 5 different kinds:
+        .stats
+            - statistics
+        .traits
+            - traits / tags
+        .skills
+            - progress bars
+        .bio
+            - plain text
+        .con
+            - connections
+    
+-->
+
+<div class="about-container">
+    
+    <!-- statistics -->
+        
+    <div class="stats">
+    
+        <div class="stats-images">
+            <img src="http://i.imgur.com/47pmIeH.png">
+            <img src="http://i.imgur.com/m1Ac38p.png">
+        </div>
+        
+        <div class="stats-text">
+            <table style="width: 100%;">
+                <tbody>
+                    <!-- want another row? copy from here... -->
+                    <tr>
+                        <td>name:</td>
+                        <td>boo rabbit</td>
+                    </tr>
+                    <!-- ...to here! -->
+                    <tr>
+                        <td>nicknames:</td>
+                        <td>something funky</td>
+                    </tr>
+                    <tr>
+                        <td>birthday:</td>
+                        <td>june 9th</td>
+                    </tr>
+                    <tr>
+                        <td>age:</td>
+                        <td>twenty-five</td>
+                    </tr>
+                    <tr>
+                        <td>zodiac sign:</td>
+                        <td>gemini</td>
+                    </tr>
+                    <tr>
+                        <td>gender:</td>
+                        <td>female</td>
+                    </tr>
+                    <tr>
+                        <td>pronouns:</td>
+                        <td>she/her</td>
+                    </tr>
+                    <tr>
+                        <td>sexuality:</td>
+                        <td>gay</td>
+                    </tr>
+                    <tr>
+                        <td>faceclaim:</td>
+                        <td>first last</td>
+                    </tr>
+                    <tr>
+                        <td>status:</td>
+                        <td>open for interactions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+    <!-- end of statistics -->
+        
+    <!-- traits -->
+        
+    <div class="traits">
+        <span>music lover</span>
+        <span>foodie</span>
+        <span>loves outdoors</span>
+        <span>cheerful</span>
+        <span>bookworm</span>
+        <span>outgoing</span>
+        <span>child of the islands</span>
+        <span>vegetarian</span>
+    </div>
+    
+    <!-- end of traits -->
+    
+    <!-- skills 
+    
+        the first negative number on the box shadow
+        tells how far the bar is filled in.
+        
+        0px means the bar is completely filled
+        -90px means the bar is halfway filled
+        -180px means the bar is completely empty
+        
+    -->
+        
+    <div class="skills">
+            
+        <div class="skill-bar">
+            charisma
+            <div class="bar" style="box-shadow:var(--sidebar) -150px 0px 0px inset;"></div>
+        </div>
+        
+        <div class="skill-bar">
+            fitness
+            <div class="bar" style="box-shadow:var(--sidebar) -10px 0px 0px inset;"></div>
+        </div>
+        
+        <div class="skill-bar">
+            cooking
+            <div class="bar" style="box-shadow:var(--sidebar) -50px 0px 0px inset;"></div>
+        </div>
+        
+        <div class="skill-bar">
+            guitar
+            <div class="bar" style="box-shadow:var(--sidebar) -110px 0px 0px inset;"></div>
+        </div>
+        
+        <div class="skill-bar">
+            handiness
+            <div class="bar" style="box-shadow:var(--sidebar) -90px 0px 0px inset;"></div>
+        </div>
+        
+        <div class="skill-bar">
+            programming
+            <div class="bar" style="box-shadow:var(--sidebar) -130px 0px 0px inset;"></div>
+        </div>
+            
+    </div>
+    
+    <!-- end of skills -->
+        
+    <!-- biography -->
+        
+    <div class="bio">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p><u>c</u>onsectetur adipiscing elit. Vivamus eleifend nisl eros, vitae dignissim enim eleifend eget. Pellentesque nec dictum mi. Nulla id justo accumsan, suscipit ligula eu, commodo mauris. In convallis posuere ligula, vel ornare nisi varius a. Curabitur malesuada lobortis augue, sed condimentum leo fringilla eu. Aliquam interdum erat vel tincidunt efficitur. Quisque sed nibh malesuada, aliquet lorem ut, mattis sem. Aliquam erat volutpat. Nunc eu purus ac diam aliquet convallis sit amet a dui.</p>
+        
+        <blockquote><p>Mauris mollis vehicula neque, id ultricies ex maximus rutrum. Pellentesque sed viverra arcu, eget sollicitudin sem. Curabitur consequat sem at augue varius, nec finibus orci tempor. Pellentesque a aliquet nunc. Fusce sollicitudin porta elit, sed commodo lacus sollicitudin sit amet. Curabitur fringilla urna porta dolor scelerisque scelerisque. Praesent egestas augue commodo enim egestas, sed mattis lectus mattis.</p></blockquote>
+        
+        <h2>Pellentesque a aliquet nunc</h2>
+        
+        <p>Etiam vehicula odio vel dui porta, vitae euismod orci luctus. Fusce ullamcorper dictum aliquet. Etiam ipsum quam, commodo et nunc quis, tincidunt elementum nibh. In volutpat imperdiet interdum. Proin vitae feugiat turpis, et vestibulum orci. Pellentesque consequat leo vel pellentesque suscipit. Mauris lobortis, lorem eu sagittis luctus, turpis urna feugiat nulla, at tincidunt arcu libero quis felis. Sed sit amet bibendum felis, quis imperdiet magna. Etiam ut mollis est.</p>
+        
+        <pre>Vivamus rutrum</pre>
+        
+        <p>Turpis ac pharetra pulvinar, velit lacus tempus urna, vitae congue tortor neque et sem. Pellentesque at libero tortor. Morbi vestibulum malesuada leo ac aliquam. Quisque vitae elit vel libero sodales imperdiet. Quisque at suscipit est, tincidunt pharetra justo. Cras quam velit, rhoncus nec dictum non, consequat in tellus. Morbi convallis posuere mauris quis tempus. Fusce ut risus a nisl sollicitudin sodales nec eget mauris.</p>
+        
+        <p>Sed ut tincidunt elit. Mauris vitae luctus neque. Aliquam urna velit, finibus ac molestie a, semper eget magna. Ut sagittis, lorem ornare maximus lacinia, urna ex vestibulum erat, eget sollicitudin leo nisi sit amet tortor. Pellentesque eleifend non neque rutrum aliquam. Quisque vitae neque id eros sagittis semper ac pulvinar lorem. Maecenas aliquet aliquam enim eget aliquet.</p>
+    </div>
+    
+    <!-- end of biography -->
+    
+    <!-- connections -->
+    
+    <div class="con">
+        
+        <div class="connection">
+            <img src="http://i.imgur.com/DDzEIC3.png">
+            
+            <h3>sprout rabbit</h3>
+            <h4>sister</h4>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend nisl eros, vitae dignissim enim eleifend eget. Pellentesque nec dictum mi. Nulla id justo accumsan, suscipit ligula eu, commodo mauris. Aliquam urna velit, finibus ac molestie a, semper eget magna. Ut sagittis, lorem ornare maximus lacinia, urna ex vestibulum erat, eget sollicitudin leo nisi sit amet tortor.</p>
+        </div>
+        
+        <!-- add <hr> between the connections for the grey line -->
+        
+        <hr>
+        
+        <div class="connection">
+            <img src="http://i.imgur.com/2tZetdu.png">
+            
+            <h3>poppy oats</h3>
+            <h4>best friend</h4>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend nisl eros, vitae dignissim enim eleifend eget. Pellentesque nec dictum mi. Nulla id justo accumsan, suscipit ligula eu, commodo mauris.</p>
+        </div>
+        
+        <hr>
+        
+        <div class="connection">
+            <img src="http://i.imgur.com/SALHu7B.png">
+            
+            <h3>mabel darby</h3>
+            <h4>ex-girlfriend</h4>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend nisl eros, vitae dignissim enim eleifend eget. Pellentesque nec dictum mi.</p>
+        </div>
+        
+    </div>
+    
+    <!-- end of connections -->
+
+</div> <!-- end of about container -->
+
+</div> <!-- end of container -->
+
+<div class="credit"><a class="sf sf-boat" href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"></a></div>
+
+</body></html>
