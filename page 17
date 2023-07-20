@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<head>
+
+<!--
+
+    page theme 17  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    
+    ------
+    
+    how to change colours + font size:
+    ctrl+f or cmd+f and look for 'theme options'
+    
+    how to edit the content:
+    ctrl+f or cmd+f and look for 'edit content here'
+    follow the instructions there
+    
+    if you need any help or have questions,
+    don't hesitate to message me at pirateskinned.tumblr.com
+    
+-->
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="description" content="{MetaDescription}" />
+
+<!-- fonts -->
+
+<link href="https://api.fontshare.com/v2/css?f[]=work-sans@300,600,400&f[]=boska@400,700,900&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+
+/* ---
+
+    THEME OPTIONS
+    
+--- */
+
+
+:root {
+    
+    
+    --background:#eee;
+    --container:#f0f0f0;
+    --header:#f6f6f6;
+    
+    --border:#d1d1d1;
+    --text:#4f4e4e;
+    --text-bg:#f9f9f9;
+    --accent:#c89999;
+    
+    --font-size:13px;
+    
+}
+
+/* --- scrollbars --- */
+
+::-webkit-scrollbar-thumb {background-color:var(--accent);}
+::-webkit-scrollbar {background-color:transparent; width:1px; height:1px;}
+
+.tmblr-iframe--unified-controls {
+    transform:scale(0.8,0.8);
+    transform-origin:top right;
+}
+
+/* --- basics --- */
+
+body {
+    background-color:var(--background);
+    background-repeat:repeat;
+    color:var(--text);
+    font-family: 'Work Sans', sans-serif;
+    font-size:var(--font-size);
+    line-height:1.5em;
+    font-weight:400;
+    text-align:left;
+    margin:0;
+}
+
+a {
+    color:var(--text);
+    text-decoration:none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:var(--text);
+        text-decoration:none;
+    }
+    
+p a, li a
+{border-bottom:1px solid var(--border);}
+p a:hover, li a:hover
+{border-bottom:1px solid var(--accent);}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+u {
+    text-decoration:none;
+    border-bottom:1px solid var(--accent);
+}
+
+small, sub, sup, big {
+    font-size:var(--font-size);
+    line-height:1.5em;
+    vertical-align:baseline;
+}
+
+blockquote {
+    padding:0px 5px 0px 15px;
+    border-left:1px solid var(--border);
+    margin-left:5px;
+    margin-right:0px;
+}
+
+ul {
+    padding-left:15px;
+}
+
+    ul li {
+        list-style-type:disc;
+    }
+        
+hr {
+    border:none;
+    border-bottom:1px solid var(--border);
+    width:calc(100% + 40px);
+    margin:0px -20px 20px -20px;
+}
+
+h1 {
+    font-weight:900;
+    margin:0px;
+    font-size:2em;
+    line-height:1em;
+    font-family: 'Boska', serif;
+}
+
+.bio b, .bio i {color:var(--accent);}
+    
+/* --- container --- */
+
+.container {
+    position:absolute;
+    top:calc(50vh - 276px);
+    left:calc(50vw - 501px);
+    width:1000px;
+    height:550px;
+    border:1px solid var(--border);
+    background-color:var(--container);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.05);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.header {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:80px;
+    border-bottom:1px solid var(--border);
+    background-color:var(--header);
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:20px;
+}
+
+    .header-icon {
+        width:80px;
+        height:80px;
+        border-right:1px solid var(--border);
+    }
+    
+        .header-icon img {
+            width:80px;
+            height:80px;
+        }
+        
+    .header-heart {
+        position:relative;
+        width:32px;
+        height:32px;
+        margin-right:50px;
+    }
+    
+        .header-heart:after {
+            content:'';
+            position:absolute;
+            top:15.5px;
+            left:50px;
+            width:30px;
+            height:1px;
+            background:var(--border);
+            display:block;
+        }
+    
+    .header-title {
+        font-size:1.1em;
+    }
+    
+        .header-title b {
+            letter-spacing:0.5px;
+            word-spacing:1px;
+        }
+    
+.left {
+    position:absolute;
+    top:81px;
+    left:0px;
+    width:80px;
+    height:calc(100% - 81px - 20px);
+    padding-top:20px;
+    border-right:1px solid var(--border);
+    background-color:var(--header);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:flex-start;
+    gap:20px;
+}
+
+    .left a {
+        width:35px;
+        height:35px;
+        margin:0px 20px;
+        border-radius:30px;
+        border:1px solid transparent;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+        .left a:after {
+            content: attr(aria-label);
+            opacity:0;
+            position:absolute;
+            max-width:60px;
+            min-height:35px;
+            text-align:center;
+            background-color:var(--header);
+            font-size:1em;
+            line-height:1em;
+            font-family: 'Boska', serif;
+            font-weight:400;
+            transition:all ease 0.8s;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        
+        .left a:hover:after {
+            opacity:1;
+        }
+        
+.stats {
+    position:absolute;
+    top:81px;
+    left:81px;
+    width:240px;
+    height:260px;
+    border-right:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+    overflow:auto;
+    padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+    .stat {
+        width:100%;
+        height:auto;
+        display:flex;
+        align-items:baseline;
+        justify-content:flex-start;
+        gap:10px;
+    }
+
+        .stat b {
+            color:var(--header);
+            background-color:var(--accent);
+            border-radius:5px;
+            padding:2px 6px;
+        }
+
+.bars {
+    position:absolute;
+    top:381px;
+    left:81px;
+    width:240px;
+    height:129px;
+    border-right:1px solid var(--border);
+    background-color:rgba(255, 255, 255, 0.15);
+    overflow:auto;
+    padding:20px;
+}
+
+    .bar-text {
+        width:100%;
+        display:flex;
+        align-items:baseline;
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+
+    .bar-outer {
+        width:calc(100% - 6px);
+        height:8px;
+        border:1px solid var(--border);
+        padding:2px;
+        border-radius:6px;
+        margin:0px 0px 10px 0px;
+    }
+    
+        .bar {
+            height:8px;
+            background-color:var(--accent);
+            border-radius:5px;
+            opacity:0.7;
+        }
+        
+        .bar-outer:last-of-type {margin:0px;}
+
+.bio {
+    position:absolute;
+    top:81px;
+    left:362px;
+    width:300px;
+    height:429px;
+    border-right:1px solid var(--border);
+    background-color:rgba(255, 255, 255, 0.25);
+    padding:20px;
+    overflow:auto;
+}
+
+.colours {
+    position:absolute;
+    top:81px;
+    left:701px;
+    width:90px;
+    height:369px;
+    border-right:1px solid var(--border);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:20px;
+}
+
+    .cblock {
+        display:block;
+        width:50px;
+        height:50px;
+        background-color:var(--accent);
+        border-radius:5px;
+    }
+    
+        .cblock:nth-of-type(1) {opacity:0.2;}
+        .cblock:nth-of-type(2) {opacity:0.4;}
+        .cblock:nth-of-type(3) {opacity:0.6;}
+        .cblock:nth-of-type(4) {opacity:0.8;}
+        .cblock:nth-of-type(5) {opacity:1;}
+
+.timeline {
+    position:absolute;
+    top:81px;
+    left:791px;
+    width:169px;
+    height:329px;
+    background-color:rgba(255, 255, 255, 0.15);
+    padding:20px;
+    overflow:auto;
+}
+
+    .timeline h2 {
+        margin:0px;
+        padding:0px 20px;
+        height:10px;
+        border:none;
+        font-size:1.2em;
+        font-weight:700;
+        position:relative;
+        display:flex;
+        align-items:center;
+    }
+    
+        .timeline h2:before {
+            content:'';
+            position:absolute;
+            margin-left:-24.5px;
+            width:10px;
+            height:10px;
+            background:var(--accent);
+            border-radius:10px;
+        }
+        
+    .tl-text {
+        padding:10px 0px 20px 20px;
+        border-left:1px solid var(--accent);
+    }
+    
+    .tl-text:last-of-type {
+        padding:10px 0px 10px 20px;
+    }
+
+.name {
+    position:absolute;
+    top:450px;
+    left:702px;
+    width:299px;
+    height:100px;
+    border-top:1px solid var(--border);
+}
+
+    .name .first,
+    .name .last {
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        font-family: 'Boska', serif;
+        line-height:1em;
+    }
+
+    .name .first {
+        top:10px;
+        font-weight:900;
+        font-size:3em;
+        opacity:0.9;
+    }
+    
+    .name .last {
+        top:-10px;
+        opacity:0.5;
+        font-size:2.5em;
+        font-weight:700;
+        -webkit-text-stroke: 1px var(--text);
+        color:var(--header);
+    }
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    border:1px solid var(--border);
+    background:var(--text-bg);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.05);
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+<!-- edit content here -->
+
+<div class="header">
+    <div class="header-icon">
+        <!-- icon image. size is 80 x 80 -->
+    
+        <img src="IMAGE_URL">
+    </div>
+    
+    <div class="header-heart">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hearts" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M14.017 18l-2.017 2l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.153 5.784"></path>
+   <path d="M15.99 20l4.197 -4.223a2.81 2.81 0 0 0 0 -3.948a2.747 2.747 0 0 0 -3.91 -.007l-.28 .282l-.279 -.283a2.747 2.747 0 0 0 -3.91 -.007a2.81 2.81 0 0 0 -.007 3.948l4.182 4.238z"></path>
+</svg>
+    </div>
+    
+    <div class="header-title">
+        <!-- header title
+        bold tags get extra letter spacing -->
+    
+        when i&rsquo;m with you there is no one else,&nbsp; <b> i get heaven to myself</b>
+    </div>
+</div>
+
+<div class="left">
+    
+    <!-- sidebar icon links -->
+    
+    <!-- formatting of the links:
+    <a href="URL_HERE" aria-label="NAME OF LINK ON HOVER">
+        <SVG ICON>
+    </a>
+    
+    if you want a different icon, you can find one here:
+    https://tabler-icons.io/
+    click on the icon. then click on 'copy svg'
+    paste the svg where it says <SVG ICON> above
+    change the stroke-width="1.5" to 1 to have the line be thinner
+    change the width and height to 25
+    change the stroke="currentColor" to stroke="var(--accent)"
+    
+    -->
+    
+    
+    <a href="/" aria-label="home">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rocket" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"></path>
+   <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3"></path>
+   <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+</svg>
+    </a>
+    
+    <a href="/" aria-label="message">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ufo" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M16.95 9.01c3.02 .739 5.05 2.123 5.05 3.714c0 2.367 -4.48 4.276 -10 4.276s-10 -1.909 -10 -4.276c0 -1.59 2.04 -2.985 5.07 -3.724"></path>
+   <path d="M7 9c0 1.105 2.239 2 5 2s5 -.895 5 -2v-.035c0 -2.742 -2.239 -4.965 -5 -4.965s-5 2.223 -5 4.965v.035"></path>
+   <path d="M15 17l2 3"></path>
+   <path d="M8.5 17l-1.5 3"></path>
+   <path d="M12 14h.01"></path>
+   <path d="M7 13h.01"></path>
+   <path d="M17 13h.01"></path>
+</svg>
+    </a>
+    
+    <a href="/" aria-label="archive">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-telescope" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M6 21l6 -5l6 5"></path>
+   <path d="M12 13v8"></path>
+   <path d="M3.294 13.678l.166 .281c.52 .88 1.624 1.265 2.605 .91l14.242 -5.165a1.023 1.023 0 0 0 .565 -1.456l-2.62 -4.705a1.087 1.087 0 0 0 -1.447 -.42l-.056 .032l-12.694 7.618c-1.02 .613 -1.357 1.897 -.76 2.905z"></path>
+   <path d="M14 5l3 5.5"></path>
+</svg>
+    </a>
+    
+    <a href="/" aria-label="some longer link here">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-whirl" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M14 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+   <path d="M12 21c-3.314 0 -6 -2.462 -6 -5.5s2.686 -5.5 6 -5.5"></path>
+   <path d="M21 12c0 3.314 -2.462 6 -5.5 6s-5.5 -2.686 -5.5 -6"></path>
+   <path d="M12 14c3.314 0 6 -2.462 6 -5.5s-2.686 -5.5 -6 -5.5"></path>
+   <path d="M14 12c0 -3.314 -2.462 -6 -5.5 -6s-5.5 2.686 -5.5 6"></path>
+</svg>
+    </a>
+    
+</div>
+
+<div class="stats">
+    
+    <!-- statistics -->
+    
+    <!-- for every stat, copy and paste one block:
+    
+    <div class="stat">
+        <b>QUESTION</b>
+        <span>ANSWER</span>
+    </div>
+    
+    -->
+    
+    <div class="stat">
+        <b>name</b>
+        <span>first last</span>
+    </div>
+    
+    <div class="stat">
+        <b>age</b>
+        <span>##</span>
+    </div>
+    
+    <div class="stat">
+        <b>pronouns</b>
+        <span>they/them</span>
+    </div>
+    
+    <div class="stat">
+        <b>location</b>
+        <span>city, country</span>
+    </div>
+    
+    <div class="stat">
+        <b>favourite song</b>
+        <span>title by artist</span>
+    </div>
+    
+    <div class="stat">
+        <b>playing</b>
+        <span>game</span>
+    </div>
+    
+</div>
+
+<div class="bars">
+    
+    <!-- progress bars -->
+    
+    <!-- for every bar, copy and paste one block:
+    you can change the width of the bar between 0% to 100%
+    
+    <div class="bar-text">
+        <b>TITLE</b>
+        <span>PERCENTAGE</span>
+    </div>
+    <div class="bar-outer">
+        <div class="bar" style="width:50%;"></div>
+    </div>
+    
+    -->
+    
+    <div class="bar-text">
+        <b>some skill</b>
+        <span>14%</span>
+    </div>
+    <div class="bar-outer">
+        <div class="bar" style="width:14%;"></div>
+    </div>
+    
+    <div class="bar-text">
+        <b>goals to work towards</b>
+        <span>3/4</span>
+    </div>
+    <div class="bar-outer">
+        <div class="bar" style="width:75%;"></div>
+    </div>
+    
+    <div class="bar-text">
+        <b>something here</b>
+        <span>46%</span>
+    </div>
+    <div class="bar-outer">
+        <div class="bar" style="width:46%;"></div>
+    </div>
+    
+</div>
+
+<div class="bio">
+    <!-- text block -->
+    
+    <!-- any regular html formatting works in here.
+    use <h1> for a big title. <b> for bold.
+    <i> for italic. <strike> for strikethrough.
+    <u> for underlined. <a href="URL" for links. -->
+
+    <h1>title here</h1>
+    <p>Sed quis dignissim tortor, vel mollis diam. Quisque dui sem, porta non mattis nec, vestibulum et ipsum. <b>Curabitur iaculis</b> metus justo, at laoreet quam lobortis at. Donec mattis turpis vitae ultrices viverra. Praesent laoreet id massa ut suscipit. Proin congue augue neque, at tincidunt felis consequat vitae. <u>Praesent</u> molestie at lectus ut gravida.</p>
+    <p>Curabitur <i>non</i> neque ac sem viverra bibendum. Nam erat nunc, mattis sit amet tincidunt a, efficitur sed massa. Sed convallis at nunc in varius. <b><i>(</i></b> In non porta mauris, id lacinia libero. <b><i>)</i></b> Nulla semper ante nec nunc maximus, ac aliquam nisl maximus. Phasellus in metus interdum dolor tempor dictum id et ex. Quisque non mauris <b>non diam</b> sollicitudin finibus. Vestibulum volutpat nibh eu vestibulum egestas.</p>
+    <p>Integer odio ligula, dapibus id euismod sit amet, euismod ac urna. Mauris fermentum tincidunt turpis vel eleifend. <i>In congue congue auctor.</i> Duis eu nisi eu leo gravida iaculis. Sed eget nulla fermentum, feugiat lacus quis, elementum nisl. Phasellus at scelerisque eros. Aliquam eu ipsum orci.</p>
+</div>
+
+<div class="colours">
+    <div class="cblock"></div>
+    <div class="cblock"></div>
+    <div class="cblock"></div>
+    <div class="cblock"></div>
+    <div class="cblock"></div>
+</div>
+
+<div class="timeline">
+
+    <!-- timeline -->
+    
+    <!-- for every new year / date, copy and paste a title and block:
+    <h2>TITLE</h2>
+    <div class="tl-text">
+        TEXT IN HERE
+    </div>
+    
+    -->
+    
+    <h2>456</h2>
+    <div class="tl-text">
+        Sed eget nulla fermentum, feugiat lacus quis, elementum nisl. Phasellus at scelerisque eros. Aliquam eu ipsum orci.
+    </div>
+    
+    <h2>1526</h2>
+    <div class="tl-text">
+        something happened
+    </div>
+    
+    <h2>2000</h2>
+    <div class="tl-text">
+        Nam erat nunc, mattis sit amet tincidunt a, efficitur sed massa.
+    </div>
+    
+    <h2>4739</h2>
+    <div class="tl-text">
+        something will happen
+    </div>
+    
+</div>
+
+<div class="name">
+    <!-- character name -->
+
+    <div class="last">last name</div>
+    <div class="first">first name</div>
+</div>
+
+</div> <!-- end of container -->
+
+<div class="credit"><a href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-anchor" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--text)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2"></path>
+   <path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+</svg></a></div>
+
+</body></html>
