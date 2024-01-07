@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<head>
+
+<!--
+
+    page theme 19  by  pirateskinned
+    
+    please don't:  edit & repost / claim as your own
+    please don't:  delete or move the credit
+    please don't:  steal bits of coding
+    
+    
+    ------
+    
+    how to change colours + font size:
+    ctrl+f or cmd+f and look for 'theme options'
+    
+    how to edit the content:
+    ctrl+f or cmd+f and look for 'edit content here'
+    follow the instructions there
+    
+    if you need any help or have questions,
+    don't hesitate to message me at pirateskinned.tumblr.com
+    
+-->
+
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<meta name="description" content="{MetaDescription}" />
+
+<!-- fonts -->
+
+<link href="https://api.fontshare.com/v2/css?f[]=poppins@400,800,700&f[]=work-sans@700,400&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+
+/* ---
+
+    THEME OPTIONS
+    
+--- */
+
+
+:root {
+    
+    
+    --background:#eee;
+    --container:#f0f0f0;
+    --border:#d1d1d1;
+    --text:#4f4e4e;
+    --text-bg:#f9f9f9;
+    --accent:#ccbbe6;
+    
+    --font-size:13px;
+    --border-radius:5px;
+    
+}
+
+/* --- scrollbars --- */
+
+::-webkit-scrollbar-thumb {background-color:var(--accent);}
+::-webkit-scrollbar {background-color:transparent; width:1px; height:1px;}
+
+.tmblr-iframe--unified-controls {
+    transform:scale(0.6,0.6);
+    transform-origin:top right;
+}
+
+/* --- basics --- */
+
+body {
+    background-color:var(--background);
+    background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size:20px 20px;
+    background-position:center center;
+    background-attachment:fixed;
+    background-repeat:repeat;
+    color:var(--text);
+    font-family: 'Work Sans', sans-serif;
+    font-size:var(--font-size);
+    line-height:1.4em;
+    font-weight:400;
+    text-align:left;
+    margin:0;
+}
+
+a {
+    color:var(--text);
+    text-decoration:none;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+    a:hover {
+        color:var(--text);
+        text-decoration:none;
+    }
+    
+p a, li a
+{border-bottom:1px solid var(--border);}
+p a:hover, li a:hover
+{border-bottom:1px solid var(--accent);}
+
+img {
+    border:none;
+    text-decoration:none;
+}
+
+u {
+    text-decoration:none;
+    border-bottom:1px solid var(--accent);
+}
+
+small, sub, sup, big {
+    font-size:var(--font-size);
+    line-height:1.4em;
+    vertical-align:baseline;
+}
+
+blockquote {
+    padding:0px 5px 0px 15px;
+    border-left:1px solid var(--border);
+    margin-left:5px;
+    margin-right:0px;
+}
+
+ul {
+    padding-left:15px;
+}
+
+    ul li {
+        list-style-type:disc;
+    }
+    
+/* --- container --- */
+
+.container {
+    position:absolute;
+    top:calc(50vh - 272px);
+    left:calc(50vw - 500px);
+    width:1000px;
+    height:544px;
+    border:1px solid var(--border);
+    background-color:var(--container);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.15);
+    border-radius:calc(var(--border-radius) + 2px);
+    box-sizing:border-box;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.st {
+    box-sizing:border-box;
+    border:1px solid var(--border);
+    border-radius:var(--border-radius);
+    background-color:var(--text-bg);
+}
+
+/* --- header --- */
+
+.header {
+    width:100%;
+    height:50px;
+    display:flex;
+    gap:10px;
+}
+
+    .header-icon {
+        width:50px;
+        height:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color:var(--accent);
+        color:var(--text-bg);
+    }
+    
+    .header-links {
+        width:calc(100% - 20px - 80px - 120px);
+        height:100%;
+        padding:0px 20px;
+        display:flex;
+        align-items:center;
+        gap:20px;
+    }
+    
+        .header-links a {
+            width:auto;
+            height:50px;
+            display:flex;
+            align-items:center;
+            padding:0px 10px;
+            font-weight:700;
+            font-family:'Poppins', sans-serif;
+            letter-spacing:0.5px;
+        }
+        
+            .header-links a:hover {
+                box-shadow:inset 0px 10px 0px var(--accent), inset 0px -10px 0px var(--accent);
+            }
+        
+    .header-img {
+        position:absolute;
+        top:10px;
+        right:10px;
+        width:150px;
+        height:410px;
+        background-size:cover;
+        background-position:center center;
+    }
+
+/* --- middle --- */
+
+.middle {
+    width:100%;
+    height:350px;
+    display:flex;
+    gap:10px;
+}
+
+    .connections {
+        width:300px;
+        height:100%;
+    }
+    
+        .connections-title, .threads-title {
+            width:100%;
+            height:50px;
+            box-sizing:border-box;
+            padding:0px 20px;
+            display:flex;
+            align-items:center;
+            border-bottom:1px solid var(--border);
+            font-family:'Poppins', sans-serif;
+            font-weight:800;
+            font-size:1.75em;
+            color:var(--accent);
+        }
+        
+        .connections-inner, .threads-inner {
+            width:100%;
+            height:calc(100% - 50px);
+            box-sizing:border-box;
+            padding:20px;
+            overflow:auto;
+        }
+        
+        .con {
+            width:100%;
+            height:auto;
+            display:flex;
+            gap:10px;
+            align-items:center;
+            justify-content:flex-start;
+            margin-bottom:20px;
+        }
+        
+            .con:last-of-type {margin:0px;}
+        
+            .con-img {
+                position:relative;
+                width:55px;
+                height:50px;
+            }
+            
+                .con-img img {
+                    width:50px;
+                    height:50px;
+                    border-radius:40px;
+                }
+                
+                .con-img-icon {
+                    position:absolute;
+                    right:0px;
+                    bottom:0px;
+                    width:20px;
+                    height:20px;
+                    background-color:var(--text-bg);
+                    border-radius:20px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                }
+                
+                    .con-mood {width:20px;height:20px;}
+                
+                    .mood-happy:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-happy" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /%3E%3Cpath d="M9 9l.01 0" /%3E%3Cpath d="M15 9l.01 0" /%3E%3Cpath d="M8 13a4 4 0 1 0 8 0h-8" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-angry:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-angry" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" /%3E%3Cpath d="M8 9l2 1" /%3E%3Cpath d="M16 9l-2 1" /%3E%3Cpath d="M14.5 16.05a3.5 3.5 0 0 0 -5 0" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-annoyed:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-annoyed" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" /%3E%3Cpath d="M15 14c-2 0 -3 1 -3.5 2.05" /%3E%3Cpath d="M9 10h-.01" /%3E%3Cpath d="M15 10h-.01" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-confused:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-confuzed" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /%3E%3Cpath d="M9 10l.01 0" /%3E%3Cpath d="M15 10l.01 0" /%3E%3Cpath d="M9.5 16a10 10 0 0 1 6 -1.5" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-excited:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-crazy-happy" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /%3E%3Cpath d="M7 8.5l3 3" /%3E%3Cpath d="M7 11.5l3 -3" /%3E%3Cpath d="M14 8.5l3 3" /%3E%3Cpath d="M14 11.5l3 -3" /%3E%3Cpath d="M9.5 15a3.5 3.5 0 0 0 5 0" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-cry:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-cry" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M9 10l.01 0" /%3E%3Cpath d="M15 10l.01 0" /%3E%3Cpath d="M9.5 15.25a3.5 3.5 0 0 1 5 0" /%3E%3Cpath d="M17.566 17.606a2 2 0 1 0 2.897 .03l-1.463 -1.636l-1.434 1.606z" /%3E%3Cpath d="M20.865 13.517a8.937 8.937 0 0 0 .135 -1.517a9 9 0 1 0 -9 9c.69 0 1.36 -.076 2 -.222" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-empty:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-empty" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /%3E%3Cpath d="M9 10l.01 0" /%3E%3Cpath d="M15 10l.01 0" /%3E%3Cpath d="M9 15l6 0" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-heart:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M21 12a9 9 0 1 0 -8.012 8.946" /%3E%3Cpath d="M9 10h.01" /%3E%3Cpath d="M15 10h.01" /%3E%3Cpath d="M9.5 15a3.59 3.59 0 0 0 2.774 .99" /%3E%3Cpath d="M18.994 21.5l2.518 -2.58a1.74 1.74 0 0 0 .004 -2.413a1.627 1.627 0 0 0 -2.346 -.005l-.168 .172l-.168 -.172a1.627 1.627 0 0 0 -2.346 -.004a1.74 1.74 0 0 0 -.004 2.412l2.51 2.59z" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-minus:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-minus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M20.48 15.014a9 9 0 1 0 -7.956 5.97" /%3E%3Cpath d="M9 10h.01" /%3E%3Cpath d="M15 10h.01" /%3E%3Cpath d="M16 19h6" /%3E%3Cpath d="M9.5 15c.658 .64 1.56 1 2.5 1s1.842 -.36 2.5 -1" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-plus:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M20.985 12.528a9 9 0 1 0 -8.45 8.456" /%3E%3Cpath d="M16 19h6" /%3E%3Cpath d="M19 16v6" /%3E%3Cpath d="M9 10h.01" /%3E%3Cpath d="M15 10h.01" /%3E%3Cpath d="M9.5 15c.658 .64 1.56 1 2.5 1s1.842 -.36 2.5 -1" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-sad:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-sad" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /%3E%3Cpath d="M9 10l.01 0" /%3E%3Cpath d="M15 10l.01 0" /%3E%3Cpath d="M9.5 15.25a3.5 3.5 0 0 1 5 0" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-smile:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile-beam" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" /%3E%3Cpath d="M10 10c-.5 -1 -2.5 -1 -3 0" /%3E%3Cpath d="M17 10c-.5 -1 -2.5 -1 -3 0" /%3E%3Cpath d="M14.5 15a3.5 3.5 0 0 1 -5 0" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-tongue:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-tongue-wink" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" /%3E%3Cpath d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /%3E%3Cpath d="M9 10h.01" /%3E%3Cpath d="M10 14v2a2 2 0 0 0 4 0v-2" /%3E%3Cpath d="M15.5 14h-7" /%3E%3Cpath d="M17 10c-.5 -1 -2.5 -1 -3 0" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-wink:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-wink" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /%3E%3Cpath d="M15 10h.01" /%3E%3Cpath d="M9.5 15a3.5 3.5 0 0 0 5 0" /%3E%3Cpath d="M8.5 8.5l1.5 1.5l-1.5 1.5" /%3E%3C/svg%3E');
+                    }
+                    
+                    .mood-puzzled:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-puzzled" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M14.986 3.51a9 9 0 1 0 1.514 16.284c2.489 -1.437 4.181 -3.978 4.5 -6.794" /%3E%3Cpath d="M10 10h.01" /%3E%3Cpath d="M14 8h.01" /%3E%3Cpath d="M12 15c1 -1.333 2 -2 3 -2" /%3E%3Cpath d="M20 9v.01" /%3E%3Cpath d="M20 6a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" /%3E%3C/svg%3E');
+                    }
+            
+            .con-text {
+                width:calc(100% - 55px - 10px);
+                display:flex;
+                flex-direction:column;
+                gap:5px;
+            }
+            
+                .con-text h4,
+                .threads h4 {
+                    line-height:1em;
+                    width:100%;
+                    margin:0px;
+                    font-family:'Poppins', sans-serif;
+                }
+                
+                .con-text p, .threads p {margin:0px;}
+    
+    .threads {
+        width:calc(100% - 300px - 10px - 10px - 150px);
+        height:100%;
+    }
+    
+        .thread {
+            width:100%;
+            height:auto;
+            display:flex;
+            align-items:flex-start;
+            justify-content:flex-start;
+            gap:10px;
+            margin-bottom:20px;
+        }
+        
+            .thread:last-of-type {margin:0px;}
+    
+            .thread-img {
+                width:50px;
+                height:50px;
+            }
+            
+                .thread-img img {
+                    width:50px;
+                    height:50px;
+                    border-radius:50px;
+                }
+                
+            .thread-text {
+                width:calc(100% - 50px - 20px - 20px);
+                display:flex;
+                flex-direction:column;
+                gap:5px;
+            }
+                
+                .thread-text-tags {
+                    display:flex;
+                    gap:10px;
+                    align-items:center;
+                    flex-wrap:wrap;
+                }
+                
+                .thread-text-tags span {
+                    background-color:var(--container);
+                    padding:0px 5px;
+                    border-radius:var(--border-radius);
+                }
+                
+                .thread-text-tags span:before {
+                    content:'#';
+                }
+                
+                .thread-status {
+                    width:20px;
+                    height:auto;
+                    display:flex;
+                    flex-direction:column;
+                    gap:2px;
+                }
+                
+                    .thread-status .status-todo,
+                    .thread-status .status-writing,
+                    .thread-status .status-complete,
+                    .thread-status a {width:20px;height:20px;}
+                
+                    .thread-status .status-todo:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /%3E%3C/svg%3E');
+                    }
+                    
+                    .thread-status .status-writing:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-dot" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /%3E%3Cpath d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /%3E%3C/svg%3E');
+                    }
+                
+                    .thread-status .status-complete:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M9 11l3 3l8 -8" /%3E%3Cpath d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /%3E%3C/svg%3E');
+                    }
+                    
+                    .thread-status a:after {
+                        content: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath stroke="none" d="M0 0h24v24H0z" fill="none"/%3E%3Cpath d="M17 7l-10 10" /%3E%3Cpath d="M8 7l9 0l0 9" /%3E%3C/svg%3E');
+                    }
+
+
+/* --- footer --- */
+
+.footer {
+    width:100%;
+    height:100px;
+    display:flex;
+    gap:10px;
+}
+
+    .footer-song {
+        width:300px;
+        height:100%;
+        display:flex;
+        gap:20px;
+        align-items:center;
+        justify-content:center;
+    }
+    
+        .footer-song-img {
+            width:60px;
+            height:60px;
+            border:1px solid var(--border);
+            border-radius:var(--border-radius);
+            background-size:cover;
+            background-position:center center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        
+        .footer-song-text {
+            width:calc(100% - 120px);
+        }
+        
+            .footer-song-text h2 {
+                margin:0px;
+                font-family:'Poppins', sans-serif;
+                color:var(--accent);
+            }
+    
+    .footer-counter {
+        position:relative;
+        width:180px;
+        height:100%;
+    }
+    
+        .footer-counter-number {
+            position:absolute;
+            z-index:1;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:100px;
+            line-height:1em;
+            font-family:'Poppins', sans-serif;
+            font-weight:800;
+            opacity:0.5;
+            color:var(--accent);
+        }
+        
+        .footer-counter-title {
+            position:relative;
+            z-index:10;
+            width:100%;
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-family:'Poppins', sans-serif;
+            font-size:20px;
+        }
+    
+    .footer-info {
+        width:calc(100% - 20px - 480px);
+        height:100%;
+        padding:0px 20px;
+        display:flex;
+        gap:30px;
+        align-items:center;
+    }
+    
+        .footer-info-stat {
+            width:auto;
+        }
+        
+            .footer-info-stat span {
+                display:block;
+                width:100%;
+                font-weight:700;
+                font-size:0.9em;
+                text-transform:uppercase;
+                letter-spacing:1px;
+            }
+            
+            .footer-info-stat b {
+                font-family:'Poppins', sans-serif;
+                color:var(--accent);
+                font-size:1.5em;
+            }
+        
+
+/* --- credit --- */
+
+.credit a {
+    position:fixed;
+    font-size:14px;
+    right:10px;
+    bottom:10px;
+    width:30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    border:1px solid var(--border);
+    background:var(--text-bg);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.05);
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+
+<div class="header">
+    
+    <div class="st header-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
+    </div>
+    
+    <!-- EDIT CONTENT HERE -->
+    
+    <div class="st header-links">
+        <!-- HEADER LINKS -->
+    
+        <a href="/">home</a>
+        
+        <a href="/ask">message</a>
+        
+        <a href="/archive">archive</a>
+        
+        <a href="/">link 4</a>
+        
+        <a href="/">link 5</a>
+        
+        <a href="/">link 6</a>
+        
+        <a href="/">link 7</a>
+    </div>
+    
+    <!-- TOP RIGHT IMAGE
+    replace the background-image with your image url
+    remember to keep the ' ' around the url -->
+    <div class="st header-img" style="background-image:url('https://placehold.co/150x410');"></div>
+    
+</div>
+
+<div class="middle">
+    
+    <div class="st connections">
+        
+        <div class="connections-title">
+            connections
+        </div>
+        
+        <div class="connections-inner">
+        
+            <!--
+            
+            CONNECTIONS
+            
+            for every connection, copy and paste a block:
+            
+            <div class="con">
+                <div class="con-img">
+                    <img src="YOUR_IMAGE_URL">
+                    <div class="con-img-icon">
+                        <div class="con-mood mood-CLASSNAME"></div>
+                    </div>
+                </div>
+                
+                <div class="con-text">
+                    <h4>MUSE NAME</h4>
+                    <p>CONNECTION TYPE</p>
+                </div>
+            </div>
+            
+            
+            class names of mood icons that you can use:
+                mood-happy
+                mood-angry
+                mood-annoyed
+                mood-confused
+                mood-excited
+                mood-cry
+                mood-empty
+                mood-heart
+                mood-sad
+                mood-smile
+                mood-tongue
+                mood-wink
+                mood-puzzled
+                mood-minus
+                mood-plus
+            
+            -->
+            
+            <div class="con">
+                <div class="con-img">
+                    <img src="https://placehold.co/50">
+                    <div class="con-img-icon">
+                        <div class="con-mood mood-happy"></div>
+                    </div>
+                </div>
+                
+                <div class="con-text">
+                    <h4>name of muse</h4>
+                    <p>connection type</p>
+                </div>
+            </div>
+            
+            
+            <div class="con">
+                <div class="con-img">
+                    <img src="https://placehold.co/50">
+                    <div class="con-img-icon">
+                        <div class="con-mood mood-puzzled"></div>
+                    </div>
+                </div>
+                
+                <div class="con-text">
+                    <h4>name of muse</h4>
+                    <p>connection type</p>
+                </div>
+            </div>
+            
+            
+            <div class="con">
+                <div class="con-img">
+                    <img src="https://placehold.co/50">
+                    <div class="con-img-icon">
+                        <div class="con-mood mood-smile"></div>
+                    </div>
+                </div>
+                
+                <div class="con-text">
+                    <h4>name of muse</h4>
+                    <p>connection type</p>
+                </div>
+            </div>
+            
+            <!-- place connections above this line -->
+            
+        </div>
+        
+    </div>
+    
+    <div class="st threads">
+        
+        <div class="threads-title">
+            thread tracker
+        </div>
+        
+        <div class="threads-inner">
+        
+            <!--
+            
+            THREAD TRACKER
+            
+            
+            for every thread copy and paste a block:
+            
+            <div class="thread">
+                
+                <div class="thread-img">
+                    <img src="YOUR_IMAGE_URL">
+                </div>
+                
+                <div class="thread-text">
+                    <h4>THREAD NAME</h4>
+                    <p>SUMMARY</p>
+                    
+                    <div class="thread-text-tags">
+                        <span>TAG 1</span>
+                        <span>TAG 2</span>
+                        <span>TAG 3</span>
+                    </div>
+                </div>
+                
+                <div class="thread-status">
+                    <div class="status-CLASSNAME"></div>
+                    <a href="LINK_TO_THREAD"></a>
+                </div>
+                
+            </div>
+            
+            class names of statuses you can use:
+                status-todo
+                status-writing
+                status-complete
+            
+            -->
+            
+            <div class="thread">
+                
+                <div class="thread-img">
+                    <img src="https://placehold.co/50">
+                </div>
+                
+                <div class="thread-text">
+                    <h4>name of thread</h4>
+                    <p>summary</p>
+                    
+                    <div class="thread-text-tags">
+                        <span>tag 1</span>
+                        <span>tag 2</span>
+                        <span>tag 3</span>
+                    </div>
+                </div>
+                
+                <div class="thread-status">
+                    <div class="status-todo"></div>
+                    <a href="/"></a>
+                </div>
+                
+            </div>
+            
+            <div class="thread">
+                
+                <div class="thread-img">
+                    <img src="https://placehold.co/50">
+                </div>
+                
+                <div class="thread-text">
+                    <h4>name of thread</h4>
+                    <p>summary</p>
+                    
+                    <div class="thread-text-tags">
+                        <span>location</span>
+                        <span>muse a</span>
+                        <span>muse b</span>
+                    </div>
+                </div>
+                
+                <div class="thread-status">
+                    <div class="status-writing"></div>
+                    <a href="/"></a>
+                </div>
+                
+            </div>
+            
+            <div class="thread">
+                
+                <div class="thread-img">
+                    <img src="https://placehold.co/50">
+                </div>
+                
+                <div class="thread-text">
+                    <h4>name of thread</h4>
+                    <p>you can delete the tags section if necessary</p>
+                </div>
+                
+                <div class="thread-status">
+                    <div class="status-complete"></div>
+                    <a href="/"></a>
+                </div>
+                
+            </div>
+            
+            <!-- place threads above this line -->
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+<div class="footer">
+    
+    <div class="st footer-song">
+        
+        <!-- SONG -->
+        
+        <div class="footer-song-img" style="background-image:url('https://placehold.co/60');">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="var(--text-bg)" /></svg>
+        </div>
+        
+        <div class="footer-song-text">
+            <h2>song title</h2>
+            <span>artist here</span>
+        </div>
+        
+    </div>
+    
+    <div class="st footer-counter">
+        <div class="footer-counter-number">
+            <!-- COUNTER -->
+            23
+        </div>
+        <div class="footer-counter-title">
+            drafts
+        </div>
+    </div>
+    
+    <div class="st footer-info">
+        
+        <!-- WRITER INFORMATION -->
+        
+        <div class="footer-info-stat">
+            <span>written by</span>
+            <b>name/alias</b>
+        </div>
+        
+        <div class="footer-info-stat">
+            <span>pronouns</span>
+            <b>they/them</b>
+        </div>
+        
+        <div class="footer-info-stat">
+            <span>age</span>
+            <b>##</b>
+        </div>
+        
+        <div class="footer-info-stat">
+            <span>timezone</span>
+            <b>gmt</b>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+
+</div> <!-- end of container -->
+
+<div class="credit"><a href="http://pirateskinned.tumblr.com/" title="coded by pirateskinned"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-anchor" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--text)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2"></path>
+   <path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+</svg></a></div>
+
+</body></html>
